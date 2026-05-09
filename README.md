@@ -49,6 +49,7 @@
 ## 🛠️ Tech Stack
 
 ### Languages
+
 <p align="center">
   <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" />
   <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="65" height="65" />
@@ -60,6 +61,7 @@
 </p>
 
 ### Frameworks & Libraries
+
 <p align="center">
   <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="65" height="65" />
   <img src="https://techstack-generator.vercel.app/nodejs-icon.svg" alt="Node.js" width="65" height="65" />
@@ -72,16 +74,19 @@
 </p>
 
 ### Databases & Data
+
 <p>
   <img src="https://skillicons.dev/icons?i=postgresql,mongodb,redis,supabase,prisma&theme=dark" alt="Databases" />
 </p>
 
 ### Cloud & DevOps
+
 <p>
   <img src="https://skillicons.dev/icons?i=aws,gcp,docker,kubernetes,vercel,cloudflare,githubactions,terraform&theme=dark" alt="Cloud & DevOps" />
 </p>
 
 ### Cybersecurity & Tools
+
 <p>
   <img src="https://skillicons.dev/icons?i=linux,bash,vim,neovim,git,github,vscode,postman&theme=dark" alt="Tools" />
   <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kali-linux&logoColor=white" alt="Kali Linux" />
@@ -98,14 +103,16 @@
 <td width="50%">
 
 ### 🚀 Building
-- **[Your Startup/Product Name]** — AI-powered [brief description]
-- **[Project Name]** — [One-line description]
-- **[Open Source Tool]** — [What it does]
+
+- **SyncSphere** — AI-powered campus event network
+- **RoadSoS** — Emergency response system
+- **Smriti** — Autonomous data analyzer
 
 </td>
 <td width="50%">
 
 ### 📚 Learning
+
 - Advanced LLM Engineering & Agent Architecture
 - Kubernetes & Cloud-Native Infrastructure
 - Red Team Operations & Advanced Pentesting
@@ -115,11 +122,10 @@
 </tr>
 </table>
 
-### 🎯 2025 Goals
-- [ ] Launch [Your Product] to 1000+ users
+### 🎯 2026 Goals
+
+- [ ] Launch SyncSphere to 1000+ users
 - [ ] Contribute to 5+ major open-source projects
-- [ ] Achieve [Specific Certification, e.g., OSCP, AWS Solutions Architect]
-- [ ] Speak at [Tech Conference/Meetup]
 - [ ] Build and deploy 3+ AI agents in production
 
 ---
@@ -133,14 +139,14 @@
 <td width="50%">
 
 ### 🚀 SyncSphere
-> AI-powered [solution] that [achievement]
 
-**Tech Stack:** `Next.js` `OpenAI` `PostgreSQL` `Docker`
+> Finding events and forming Teams with peers.
+
+**Tech Stack:** `Next.js` `PostgreSQL` `Docker`
 
 **Highlights:**
-- ⚡ Processed 10K+ requests/day
-- 🎯 99.9% uptime
-- 📈 Featured on [Platform]
+
+-under development.
 
 [![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/PSP-YN/project1)
 [![Demo](https://img.shields.io/badge/🚀_Live_Demo-00D9FF?style=for-the-badge&logo=vercel&logoColor=black)](https://yourproject.demo)
@@ -148,30 +154,14 @@
 </td>
 <td width="50%">
 
-### 🔐 RoadSoS
-> Automated security [tool/platform] for [use case]
-
-**Tech Stack:** `Python` `FastAPI` `Redis` `AWS Lambda`
-
-**Highlights:**
-- 🔍 Scanned 500K+ vulnerabilities
-- ⚡ Sub-100ms response time
-- 🏆 [Award/Recognition]
-
-[![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/PSP-YN/project2)
-[![Demo](https://img.shields.io/badge/🚀_Live_Demo-00D9FF?style=for-the-badge&logo=vercel&logoColor=black)](https://yourproject2.demo)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
 ### 🤖 Smriti
-> Autonomous AI agent for [task/domain]
 
-**Tech Stack:** `Python` `LangChain` `Pinecone` `React`
+> Autonomous AI agent for Analyzing data
+
+**Tech Stack:** `Python` `React` `TypeScript`
 
 **Highlights:**
+
 - 🧠 Multi-agent orchestration
 - 🔄 Self-improving prompts
 - 📊 40% efficiency improvement
@@ -179,20 +169,25 @@
 [![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/PSP-YN/project3)
 
 </td>
+</tr>
+<tr>
 <td width="50%">
 
 ### ⚡ Hackathon Scraper Bot
-> [Brief description of your project]
 
-**Tech Stack:** `Go` `Kubernetes` `Prometheus` `gRPC`
+> Finding hackathons from popular websites.
+
+**Tech Stack:** `Python`
 
 **Highlights:**
-- 📈 Handles [X] req/sec
-- 🌍 Distributed across [Y] regions
-- 💰 Reduced costs by [Z]%
 
-[![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/PSP-YN/project4)
+- 📈 Handles 429+ req/sec
 
+[![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/PSP-YN/Hackathon-bot)
+
+</td>
+<td width="50%">
+<!-- Future Project Placeholder -->
 </td>
 </tr>
 </table>
@@ -244,24 +239,28 @@
 <summary><b>🏅 Click to Expand Achievements</b></summary>
 
 ### Hackathons & Competitions
+
 - 🥇 **[Competition Name]** — [Your Achievement/Placement] — [Year]
 - 🥈 **[Hackathon Name]** — [Achievement] for [Project] — [Year]
 - 🏆 **[CTF/Event Name]** — [Rank/Position] — [Year]
 
 ### Certifications
+
 - 📜 [Certification Name] — [Issuing Organization] — [Year]
 - 📜 [Certification Name] — [Issuing Organization] — [Year]
 - 📜 [Certification Name] — [Issuing Organization] — [Year]
 
 ### Leadership & Community
+
 - 🎯 [Position] @ [Organization/Club] — [Year-Present]
 - 🎤 [Speaking/Event Role] @ [Conference/Meetup] — [Year]
 - 📝 [Blog/Content Achievement] — [Details] — [Year]
 
 ### Milestones
-- ⭐ [X]+ GitHub Stars across repositories
-- 🚀 [X]+ contributions to open source in [Year]
-- 👥 Mentored [X]+ developers/students
+
+- ⭐ 50+ GitHub Stars across repositories
+- 🚀 100+ contributions to open source in 2026
+- 👥 Mentored 20+ developers/students
 
 </details>
 
@@ -323,10 +322,10 @@
 <div align="center">
 
 ```diff
-+ 🔭 Currently working on: [Your Current Project]
-+ 🌱 Currently learning: [What You're Learning]
++ 🔭 Currently working on: SyncSphere
++ 🌱 Currently learning: Cyber Security
 + 💬 Ask me about: AI Architecture, Cybersecurity, Startups, System Design
-+ ⚡ Fun fact: [Something Interesting About You]
++ ⚡ Fun fact: Trying to learn everything knowing it's not possible
 + 🎯 Philosophy: Build fast, break things (responsibly), learn faster
 ```
 
@@ -370,7 +369,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Generate GitHub Contributions Snake Animation
         uses: Platane/snk@v3
         with:
@@ -379,7 +378,7 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
             dist/github-contribution-grid-snake-light.svg?palette=github-light
-            
+
       - name: Push generated files to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
@@ -397,7 +396,7 @@ Replace these placeholders with your actual information:
 
 REQUIRED REPLACEMENTS:
 - Putta Shankar Prasad → Your actual name
-- PSP-YN → Your GitHub username  
+- PSP-YN → Your GitHub username
 - github.com/PSP-YN → Your actual portfolio URL
 - puttashankarprasadyn11@gmail.com → Your email address
 - SyncSphere → What you're currently building
