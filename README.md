@@ -12,10 +12,10 @@
 
 <div align="center">
   
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=00D9FF)](https://yourportfolio.com)
-[![LinkedIn](https://img.shields.io/badge/🔗_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourusername)
-[![Twitter/X](https://img.shields.io/badge/𝕏_Twitter-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/yourusername)
-[![Email](https://img.shields.io/badge/✉️_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:youremail@example.com)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=00D9FF)](https://github.com/PSP-YN)
+[![LinkedIn](https://img.shields.io/badge/🔗_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/PSP-YN)
+[![Twitter/X](https://img.shields.io/badge/𝕏_Twitter-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/PSP-YN)
+[![Email](https://img.shields.io/badge/✉️_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:puttashankarprasadyn11@gmail.com)
 
 </div>
 
@@ -39,8 +39,8 @@
 │  ├── 🚀 Startup Building & Product Engineering                  │
 │  └── 🌐 Full-Stack Development (Next.js · Node · Python)        │
 │                                                                 │
-│  Currently: Building @ [Your Current Project/Startup]           │
-│  Location: [Your City, Country]                                  │
+│  Currently: Building @ SyncSphere           │
+│  Location: India                                  │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -132,7 +132,7 @@
 <tr>
 <td width="50%">
 
-### 🚀 [Project Name 1]
+### 🚀 SyncSphere
 > AI-powered [solution] that [achievement]
 
 **Tech Stack:** `Next.js` `OpenAI` `PostgreSQL` `Docker`
@@ -142,13 +142,13 @@
 - 🎯 99.9% uptime
 - 📈 Featured on [Platform]
 
-[![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/yourusername/project1)
+[![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/PSP-YN/project1)
 [![Demo](https://img.shields.io/badge/🚀_Live_Demo-00D9FF?style=for-the-badge&logo=vercel&logoColor=black)](https://yourproject.demo)
 
 </td>
 <td width="50%">
 
-### 🔐 [Project Name 2]
+### 🔐 RoadSoS
 > Automated security [tool/platform] for [use case]
 
 **Tech Stack:** `Python` `FastAPI` `Redis` `AWS Lambda`
@@ -158,7 +158,7 @@
 - ⚡ Sub-100ms response time
 - 🏆 [Award/Recognition]
 
-[![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/yourusername/project2)
+[![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/PSP-YN/project2)
 [![Demo](https://img.shields.io/badge/🚀_Live_Demo-00D9FF?style=for-the-badge&logo=vercel&logoColor=black)](https://yourproject2.demo)
 
 </td>
@@ -166,7 +166,7 @@
 <tr>
 <td width="50%">
 
-### 🤖 [Project Name 3]
+### 🤖 Smriti
 > Autonomous AI agent for [task/domain]
 
 **Tech Stack:** `Python` `LangChain` `Pinecone` `React`
@@ -176,12 +176,12 @@
 - 🔄 Self-improving prompts
 - 📊 40% efficiency improvement
 
-[![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/yourusername/project3)
+[![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/PSP-YN/project3)
 
 </td>
 <td width="50%">
 
-### ⚡ [Project Name 4]
+### ⚡ Hackathon Scraper Bot
 > [Brief description of your project]
 
 **Tech Stack:** `Go` `Kubernetes` `Prometheus` `gRPC`
@@ -191,7 +191,7 @@
 - 🌍 Distributed across [Y] regions
 - 💰 Reduced costs by [Z]%
 
-[![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/yourusername/project4)
+[![Repo](https://img.shields.io/badge/🔗_View_Repo-181717?style=for-the-badge&logo=github)](https://github.com/PSP-YN/project4)
 
 </td>
 </tr>
@@ -205,20 +205,20 @@
 
 <div align="center">
   
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=transparent&hide_border=true&bg_color=0d1117&title_color=00D9FF&icon_color=7B61FF&text_color=c9d1d9" alt="GitHub Stats" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=transparent&hide_border=true&background=0d1117&stroke=00D9FF&ring=7B61FF&fire=FF006E&currStreakNum=00D9FF&sideNums=c9d1d9&currStreakLabel=00D9FF&sideLabels=c9d1d9" alt="GitHub Streak" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=PSP-YN&show_icons=true&theme=transparent&hide_border=true&bg_color=0d1117&title_color=00D9FF&icon_color=7B61FF&text_color=c9d1d9" alt="GitHub Stats" />
+  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=PSP-YN&theme=transparent&hide_border=true&background=0d1117&stroke=00D9FF&ring=7B61FF&fire=FF006E&currStreakNum=00D9FF&sideNums=c9d1d9&currStreakLabel=00D9FF&sideLabels=c9d1d9" alt="GitHub Streak" />
 
 </div>
 
 <div align="center">
   
-  <img width="60%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=transparent&hide_border=true&bg_color=0d1117&title_color=00D9FF&text_color=c9d1d9&langs_count=8" alt="Top Languages" />
+  <img width="60%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PSP-YN&layout=compact&theme=transparent&hide_border=true&bg_color=0d1117&title_color=00D9FF&text_color=c9d1d9&langs_count=8" alt="Top Languages" />
 
 </div>
 
 <div align="center">
   
-  [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=yourusername&bg_color=0d1117&color=00D9FF&line=7B61FF&point=FF006E&area=true&hide_border=true)](https://github.com/yourusername)
+  [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=PSP-YN&bg_color=0d1117&color=00D9FF&line=7B61FF&point=FF006E&area=true&hide_border=true)](https://github.com/PSP-YN)
 
 </div>
 
@@ -229,9 +229,9 @@
 <div align="center">
   
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yourusername/yourusername/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yourusername/yourusername/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub Contribution Grid Snake Animation" src="https://raw.githubusercontent.com/yourusername/yourusername/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PSP-YN/PSP-YN/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PSP-YN/PSP-YN/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub Contribution Grid Snake Animation" src="https://raw.githubusercontent.com/PSP-YN/PSP-YN/output/github-contribution-grid-snake-dark.svg" />
   </picture>
   
 </div>
@@ -308,11 +308,11 @@
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-@yourusername-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-@yourusername-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourusername)
-[![Twitter/X](https://img.shields.io/badge/Twitter-@yourusername-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/yourusername)
-[![Portfolio](https://img.shields.io/badge/Portfolio-yourportfolio.com-000000?style=for-the-badge&logo=vercel&logoColor=00D9FF)](https://yourportfolio.com)
-[![Email](https://img.shields.io/badge/Email-youremail@example.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:youremail@example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-@PSP-YN-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PSP-YN)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-@PSP-YN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/PSP-YN)
+[![Twitter/X](https://img.shields.io/badge/Twitter-@PSP-YN-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/PSP-YN)
+[![Portfolio](https://img.shields.io/badge/Portfolio-github.com/PSP-YN-000000?style=for-the-badge&logo=vercel&logoColor=00D9FF)](https://github.com/PSP-YN)
+[![Email](https://img.shields.io/badge/Email-puttashankarprasadyn11@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:puttashankarprasadyn11@gmail.com)
 
 </div>
 
@@ -336,7 +336,7 @@
 
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=yourusername&color=00D9FF&style=for-the-badge&label=PROFILE+VIEWS)
+![Profile Views](https://komarev.com/ghpvc/?username=PSP-YN&color=00D9FF&style=for-the-badge&label=PROFILE+VIEWS)
 
 <br/>
 
@@ -396,12 +396,12 @@ jobs:
 Replace these placeholders with your actual information:
 
 REQUIRED REPLACEMENTS:
-- [YOUR NAME] → Your actual name
-- yourusername → Your GitHub username  
-- yourportfolio.com → Your actual portfolio URL
-- youremail@example.com → Your email address
-- [Your Current Project/Startup] → What you're currently building
-- [Your City, Country] → Your location
+- Putta Shankar Prasad → Your actual name
+- PSP-YN → Your GitHub username  
+- github.com/PSP-YN → Your actual portfolio URL
+- puttashankarprasadyn11@gmail.com → Your email address
+- SyncSphere → What you're currently building
+- India → Your location
 
 PROJECT SECTIONS:
 - Replace [Project Name 1-4] with your actual project names
@@ -450,7 +450,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 Then add this to your README:
-<img src="https://raw.githubusercontent.com/yourusername/yourusername/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" />
+<img src="https://raw.githubusercontent.com/PSP-YN/PSP-YN/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" />
 
 ═══════════════════════════════════════════════════════════════
 -->
