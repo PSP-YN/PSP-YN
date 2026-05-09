@@ -1,6 +1,6 @@
 <div align="center">
   
-![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=32&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+%5BYOUR+NAME%5D;AI+Engineer+%C2%B7+Startup+Founder;Building+the+Future+%E2%9A%A1;Cybersecurity+%C2%B7+Automation+%C2%B7+Scale)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=32&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+%5BPUTTA+SHANKAR+PRASAD+Y+N%5D;AI+Engineer+%C2%B7+Aspiring+Startup+Founder;Building+the+Future+%E2%9A%A1;Cybersecurity+%C2%B7+Automation+%C2%B7+Scale)
 
 </div>
 
@@ -142,7 +142,7 @@
 
 > Finding events and forming Teams with peers.
 
-**Tech Stack:** `Next.js` `PostgreSQL` `Docker`
+**Tech Stack:** `Next.js` `PostgreSQL` `Docker` `Typescript` `CSS` `Supabase`
 
 **Highlights:**
 
@@ -158,7 +158,7 @@
 
 > Autonomous AI agent for Analyzing data
 
-**Tech Stack:** `Python` `React` `TypeScript`
+**Tech Stack:** `Python` `Flutter`
 
 **Highlights:**
 
