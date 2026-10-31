@@ -81,6 +81,7 @@ A campus platform for event discovery, student/faculty/admin roles, moderation, 
 - **Engineering:** Expo/React Native, TypeScript, Supabase Auth, PostgreSQL RLS and realtime workflows.
 - **Validation still needed:** A controlled campus pilot, adversarial RLS testing and evidence of actual adoption.
 - **Stack:** Expo · React Native · TypeScript · Supabase.
+- **Web presence:** [syncsphere-campus.vercel.app](https://syncsphere-campus.vercel.app)  
 - **Repository:** [PSP-YN/SyncSphere](https://github.com/PSP-YN/SyncSphere)
 
 ### 6. NOVA — Linux desktop AI agent
