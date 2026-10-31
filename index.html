@@ -8,6 +8,9 @@
   <meta property="og:title" content="Putta Shankar Prasad Y N — Portfolio">
   <meta property="og:description" content="Building useful software at the intersection of engineering, AI, security, and entrepreneurship.">
   <meta property="og:type" content="website">
+  <meta name="color-scheme" content="dark">
+  <meta name="author" content="Putta Shankar Prasad Y N">
+  <meta name="keywords" content="Putta Shankar Prasad, software engineering, applied AI, cybersecurity, portfolio, VVCE">
   <title>Putta Shankar Prasad Y N — Builder & CSE Student</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23080b16'/%3E%3Cpath d='M17 46V18h17c9 0 14 5 14 13S43 44 34 44H27v2z' fill='none' stroke='%237ce0cf' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,12 +30,54 @@
     .journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.timeline{border-left:1px solid rgba(124,224,207,.3);margin:8px 0 0 5px;padding-left:25px}.timeline-item{position:relative;padding:0 0 27px}.timeline-item:before{content:"";position:absolute;left:-31px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 5px rgba(124,224,207,.09)}.timeline-item small{font:10px "DM Mono";color:var(--mint);letter-spacing:.08em}.timeline-item h3{font:600 15px Manrope;margin:6px 0 4px}.timeline-item p{font-size:12px;color:var(--muted);margin:0;line-height:1.7}.credential-list{display:grid;gap:9px}.credential{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line)}.credential b{font:500 12px Manrope}.credential span{font:10px "DM Mono";color:#8d9ab0;text-align:right}
     .contact{padding:75px;border:1px solid rgba(124,224,207,.23);border-radius:16px;background:radial-gradient(ellipse at 85% 20%,rgba(140,156,255,.15),transparent 40%),linear-gradient(130deg,rgba(16,28,44,.98),rgba(11,16,30,.98));position:relative;overflow:hidden}.contact:after{content:"";position:absolute;right:-100px;bottom:-220px;width:420px;height:420px;border:1px solid rgba(124,224,207,.16);border-radius:50%;box-shadow:0 0 0 35px rgba(124,224,207,.025),0 0 0 70px rgba(124,224,207,.02)}.contact h2{font:800 clamp(35px,5vw,60px)/1.05 Manrope;letter-spacing:-.06em;max-width:650px;margin:14px 0}.contact p{color:var(--muted);font-size:14px;max-width:500px;margin:15px 0 28px}.contact .btn{position:relative;z-index:2}.socials{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px;color:#9ba9bd;font:10px "DM Mono"}.socials a:hover{color:var(--mint)}
     footer{padding:30px 0;color:#738097;font:10px "DM Mono"}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+
+    /* Visual refinement: editorial grid, controlled glow, and sharper interaction states */
+    :root{--max:1200px;--line:rgba(203,220,255,.13);--mint:#86f0dc;--blue:#91a5ff;--violet:#c0aaff}
+    body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.19;background-image:linear-gradient(rgba(156,177,220,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(156,177,220,.045) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to bottom,black,transparent 78%)}
+    .page-progress{position:fixed;z-index:40;top:0;left:0;width:0;height:2px;background:linear-gradient(90deg,var(--mint),var(--blue),var(--violet));box-shadow:0 0 16px rgba(134,240,220,.45)}
+    .nav{border-bottom-color:rgba(213,226,255,.06)}
+    .brand-mark{border-radius:10px;box-shadow:inset 0 0 18px rgba(134,240,220,.08),0 0 24px rgba(134,240,220,.05)}
+    .nav-links a:not(.nav-cta){position:relative}.nav-links a:not(.nav-cta):after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:1px;background:var(--mint);transition:right .25s}.nav-links a:not(.nav-cta):hover:after{right:0}
+    .hero{min-height:790px}.hero:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 45%,rgba(111,130,255,.055),transparent 52%)}
+    .hero-copy{max-width:680px}.availability{border-color:rgba(134,240,220,.22);box-shadow:inset 0 0 18px rgba(134,240,220,.035)}
+    h1{font-size:clamp(54px,7vw,92px);line-height:.96;max-width:780px}
+    .hero-lead{max-width:560px;font-size:16px}.hero-actions .btn{min-height:48px}
+    .visual{filter:saturate(1.12)}.visual:after{content:"";position:absolute;inset:8% 2%;border:1px solid rgba(173,190,255,.09);border-radius:50%;transform:rotate(-19deg) scaleY(.42);pointer-events:none}
+    .visual-label{box-shadow:0 18px 60px rgba(0,0,0,.25)}
+    .intro-strip{background:linear-gradient(90deg,rgba(134,240,220,.025),rgba(145,165,255,.035),rgba(134,240,220,.025))}
+    .section{position:relative}.section-head h2{font-size:clamp(38px,5vw,60px)}
+    .about-text p{font-size:16px}.principle{transition:border-color .2s,transform .2s,background .2s}.principle:hover{transform:translateY(-3px);border-color:rgba(134,240,220,.3);background:rgba(134,240,220,.035)}
+    .project-grid{gap:18px}.project{min-height:300px;padding:28px 29px 25px;border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.12);transform-style:preserve-3d}
+    .project:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,transparent,var(--mint),var(--blue),transparent);opacity:.45}
+    .project:nth-child(2):before{background:linear-gradient(90deg,transparent,#9daaff,#c0aaff,transparent)}
+    .project:nth-child(3):before{background:linear-gradient(90deg,transparent,#ffad8c,#c0aaff,transparent)}
+    .project:nth-child(4):before{background:linear-gradient(90deg,transparent,#86f0dc,#91a5ff,transparent)}
+    .project:after{width:230px;height:230px;right:-125px;top:-145px;background:rgba(134,240,220,.085);transition:transform .5s,opacity .5s}
+    .project:hover:after{transform:scale(1.45);opacity:.9}
+    .project h3{font-size:26px}.project p{max-width:510px}
+    .project-index{letter-spacing:.13em}.status{background:rgba(134,240,220,.045)}
+    .focus{transition:transform .22s,border-color .22s,background .22s}.focus:hover{transform:translateY(-4px);border-color:rgba(134,240,220,.3);background:rgba(134,240,220,.035)}
+    .timeline-item:before{box-shadow:0 0 0 5px rgba(134,240,220,.08),0 0 18px rgba(134,240,220,.24)}
+    .credential{transition:padding .2s,border-color .2s}.credential:hover{padding-left:8px;border-color:rgba(134,240,220,.28)}
+    .contact{padding:78px;border-radius:18px;box-shadow:0 25px 90px rgba(0,0,0,.16)}
+    .contact-actions{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:2}
+    .email-lines{display:flex;gap:26px;flex-wrap:wrap;margin-top:25px;position:relative;z-index:2}
+    .email-lines a{display:flex;flex-direction:column;gap:4px;color:#d5deeb;font:12px "DM Mono",monospace}
+    .email-lines a:hover{color:var(--mint)}.email-lines span{font-size:9px;letter-spacing:.15em;color:#8392aa}
+    .socials{padding-top:20px;border-top:1px solid var(--line);max-width:420px}
+    .btn-ghost{backdrop-filter:blur(10px)}
+    .reveal{transition:opacity .72s cubic-bezier(.2,.7,.2,1),transform .72s cubic-bezier(.2,.7,.2,1)}
+    @media(max-width:900px){.hero{min-height:auto}.contact{padding:50px}}
+    @media(max-width:650px){.hero{padding-bottom:65px}h1{font-size:clamp(48px,13.5vw,70px)}.project{min-height:0;padding:23px}.contact{padding:32px 22px}.email-lines{gap:16px}.email-lines a{font-size:11px}.visual:after{inset:10% 4%}.page-progress{height:2px}}
+    @media(prefers-reduced-motion:reduce){.project,.principle,.focus,.credential{transition:none}}
+
     @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:130px;min-height:auto}.hero-copy{max-width:720px}.visual{height:420px;margin-top:10px}.visual .orbit-card{left:7%}.visual .orbit-card.two{right:5%}.about-grid{gap:35px}.focus-grid{grid-template-columns:repeat(2,1fr)}.contact{padding:48px}}
     @media(max-width:650px){.wrap{width:min(100% - 34px,var(--max))}.nav{height:66px}.menu{display:block}.nav-links{display:none;position:absolute;top:65px;left:0;right:0;padding:20px 24px 25px;background:#0c1220;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}.nav-links.open{display:flex}.hero{padding:115px 0 55px}.hero-grid{gap:0}h1{font-size:clamp(47px,14vw,70px)}.hero-lead{font-size:15px}.visual{height:340px;margin:0 -10px}.visual:before{width:260px;height:260px}.orbit-card{top:40px!important;left:0!important;min-width:125px;padding:10px}.orbit-card.two{top:auto!important;bottom:42px!important;right:0!important}.visual-label{bottom:5px}.scroll-note{display:none}.section{padding:72px 0}.section-head{display:block}.section-head p{margin-top:15px}.about-grid,.journey-grid{grid-template-columns:1fr;gap:30px}.about-aside{position:static}.about-aside .big-number{font-size:70px;margin:12px 0}.principles,.project-grid{grid-template-columns:1fr}.project p{min-height:0}.focus-grid{grid-template-columns:1fr 1fr}.focus{padding:15px}.contact{padding:30px 22px}.credential{align-items:flex-start}.strip-inner{align-items:flex-start}.strip-items{gap:15px}.hero-meta{gap:13px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
   </style>
 </head>
 <body>
+  <div class="page-progress" id="pageProgress" aria-hidden="true"></div>
   <header class="nav" id="nav"><div class="wrap nav-inner">
     <a class="brand" href="#home" aria-label="PSP home"><span class="brand-mark">PSP</span><span>PUTTA SHANKAR PRASAD</span></a>
     <button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
@@ -113,19 +158,26 @@
     </div></section>
     <section class="section" id="contact"><div class="wrap"><div class="contact reveal">
       <div class="eyebrow">05 / Contact</div><h2>Have a problem worth building for?</h2><p>I'm interested in thoughtful collaboration, hackathons, early-stage product ideas, and opportunities to learn by shipping real software.</p>
-      <a class="btn btn-primary" href="mailto:puttashankarprasadyn11@gmail.com">Start a conversation ↗</a>
-      <div class="socials"><a href="https://github.com/PSP-YN" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://linkedin.com/in/pspyn" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="mailto:puttashankarprasadyn11@gmail.com">EMAIL ↗</a></div>
+      <div class="contact-actions"><a class="btn btn-primary" href="mailto:psppspyn13@gmail.com">Personal email ↗</a><a class="btn btn-ghost" href="mailto:vvce25cse0402@vvce.ac.in">College email ↗</a></div>
+      <div class="email-lines"><a href="mailto:psppspyn13@gmail.com"><span>PERSONAL</span>psppspyn13@gmail.com</a><a href="mailto:vvce25cse0402@vvce.ac.in"><span>VVCE</span>vvce25cse0402@vvce.ac.in</a></div>
+      <div class="socials"><a href="https://github.com/PSP-YN" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://linkedin.com/in/pspyn" target="_blank" rel="noreferrer">LINKEDIN ↗</a></div>
     </div></div></section>
   </main>
   <footer><div class="wrap footer-inner"><span>© <span id="year"></span> PUTTA SHANKAR PRASAD Y N</span><span>DESIGNED TO EVOLVE · BUILT WITH CURIOSITY</span><a href="#home">BACK TO TOP ↑</a></div></footer>
   <script>
     const nav=document.getElementById('nav'),menu=document.getElementById('menu'),links=document.getElementById('navlinks');
-    window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>18),{passive:true});
+    const progress=document.getElementById('pageProgress');
+    const updateScroll=()=>{nav.classList.toggle('scrolled',window.scrollY>18);const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?window.scrollY/max*100:0)+'%'};
+    window.addEventListener('scroll',updateScroll,{passive:true});updateScroll();
     menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});
     links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
     document.getElementById('year').textContent=new Date().getFullYear();
     const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
     document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    // Gentle card tilt is pointer-only, disabled for touch and reduced-motion users.
+    if(matchMedia('(hover:hover) and (pointer:fine)').matches&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+      document.querySelectorAll('.project').forEach(card=>{card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform='translateY(-4px) perspective(900px) rotateX('+(-y*2.2)+'deg) rotateY('+(x*2.2)+'deg)'});card.addEventListener('pointerleave',()=>card.style.transform='')});
+    }
     (async function(){
       const canvas=document.getElementById('orb');if(!canvas||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
       try{
