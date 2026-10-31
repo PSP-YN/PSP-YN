@@ -1,163 +1,46 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
-import * as THREE from "three";
+import { useEffect, useMemo, useState } from "react";
 import {
   ArrowDown, ArrowRight, ArrowUpRight, BrainCircuit, BriefcaseBusiness,
-  CheckCircle2, Code2, Cpu, ExternalLink, Github, GraduationCap, Layers3,
+  CheckCircle2, Code2, Cpu, Github, GraduationCap, Layers3,
   Linkedin, Mail, Menu, Search, ShieldCheck, Smartphone, Sparkles, Workflow, X, Instagram, AtSign, MessageCircle
 } from "lucide-react";
 
 type Category = "Product" | "AI & Automation" | "Systems" | "Security" | "Prototypes";
 type Project = {
   rank: number; name: string; category: Category; status: string; summary: string;
-  stack: string[]; evidence: string; interview: string; next: string; repo: string; live?: string;
+  stack: string[]; evidence: string; interview: string; next: string; live?: string;
   priority: "Lead" | "Technical" | "Prototype" | "Archive";
 };
 
 const projects: Project[] = [
-  {rank:1,name:"CareerOS",category:"Product",status:"Deployed · CI passing",summary:"A career-planning workspace connecting role definition, skill-gap analysis, learning roadmaps, interview practice and application tracking.",stack:["JavaScript","Supabase","Vercel","Gemini"],evidence:"Live product surface and recent successful main-branch verification. Guest mode, resume tools, interview rounds and optional authenticated AI reviews are documented. Payments and some cloud integrations still require configuration.",interview:"Product architecture, user journeys, local-first guest mode, Supabase RLS, server-side AI quota controls and monetisation boundaries.",next:"Validate the complete sign-in and cloud-sync journey, finish legal launch details, and run end-to-end tests for any enabled paid flow.",repo:"https://github.com/PSP-YN/CareerOS",live:"https://careeros-intelligence.vercel.app",priority:"Lead"},
-  {rank:2,name:"DaemonX",category:"AI & Automation",status:"Local platform · CI passing",summary:"A Linux-controlled Android automation and personal knowledge platform combining ADB, accessibility trees, OCR, computer vision and an MCP interface.",stack:["Python","MCP","ADB","Tesseract","OpenCV","SQLite"],evidence:"Latest main-branch CI passed on 30 October 2026. The repository documents 27 tests, resumable task execution and a local dashboard; real-device workflows still need a repeatable demonstration.",interview:"Observe–act–verify loops, multimodal perception, task checkpointing, idempotent actions, MCP tool design and safe file quarantine.",next:"Record a complete workflow on a physical Android device, publish a reproducible benchmark and document device-specific limitations.",repo:"https://github.com/PSP-YN/DaemonX",priority:"Lead"},
-  {rank:3,name:"LangAssist",category:"Systems",status:"Linux desktop · CI passing",summary:"An offline, non-LLM grammar assistant for GNOME Wayland that uses accessibility APIs to inspect text and apply corrections in place.",stack:["Rust","Harper","AT-SPI","GTK4","Libadwaita"],evidence:"Main-branch CI passed. The implementation documents password/terminal exclusions, stale-offset guards, a live AT-SPI verification script and local performance benchmarks.",interview:"Linux accessibility, event-driven desktop integration, transactional edits, privacy boundaries, Rust architecture and performance measurement.",next:"Publish a compatibility matrix from real GTK, Chromium and Electron tests, plus a short screen recording of the edit workflow.",repo:"https://github.com/PSP-YN/LangAssist",priority:"Lead"},
-  {rank:4,name:"NexHelp",category:"Product",status:"Pilot candidate · CI passing",summary:"A trust-first home-services marketplace for customers and verified local professionals, initially scoped to plumbing and electrical services in Bengaluru.",stack:["Flutter","Supabase","PostgreSQL","Next.js","RLS"],evidence:"Latest main-branch CI passed. Repository documents mobile customer/provider flows, database migrations, RLS, an operations dashboard and 50 automated tests. Supabase, messaging and store-release steps remain.",interview:"Marketplace workflows, role-based access, database invariants, provider verification, dispatch operations and staged geographic rollout.",next:"Provision the backend, test customer-to-provider fulfilment with real pilot users, and validate dispute and cancellation handling.",repo:"https://github.com/PSP-YN/NexHelp",priority:"Lead"},
-  {rank:5,name:"SyncSphere",category:"Product",status:"App prototype · CI and release passing",summary:"A campus event network with student, faculty and admin roles, event discovery, moderation, team formation, chat and reminders.",stack:["Expo","React Native","TypeScript","Supabase","PostgreSQL"],evidence:"Main-branch CI and automatic release workflows passed. A public web presence exists; the mobile experience still depends on Supabase project setup and deployment configuration.",interview:"Postgres RLS, role separation, moderation workflows, realtime messaging, atomic rate limits and mobile product architecture.",next:"Run a controlled campus pilot, test RLS with adversarial role cases and measure event creation-to-attendance conversion.",repo:"https://github.com/PSP-YN/SyncSphere",live:"https://syncsphere-campus.vercel.app",priority:"Lead"},
-  {rank:6,name:"NOVA",category:"AI & Automation",status:"Active build · integrations need verification",summary:"A Linux desktop AI agent concept with a persistent command centre, accessibility-tree perception, automation, local knowledge retrieval and a stateful orb interface.",stack:["Python","Linux","AT-SPI","Ollama","SQLite","Wayland"],evidence:"Recently updated repository and a README claim of 168 passing tests. No recent GitHub Actions run was found, so the full integration set and test claim need direct reproduction.",interview:"Desktop agent architecture, accessibility-based perception, event loops, tool execution, memory retrieval and human approval states.",next:"Publish a clean installation path, test every advertised integration on a fresh Fedora environment and record a complete end-to-end task.",repo:"https://github.com/PSP-YN/NOVA",priority:"Lead"},
-  {rank:7,name:"Aegis Agent",category:"Security",status:"Advanced prototype · CI currently failing",summary:"An application-security platform exploring browser and IDE discovery, application-state graphs, threat modelling, deterministic evidence and remediation.",stack:["Python","FastAPI","Chrome MV3","VS Code","SARIF"],evidence:"The repository describes 89 tests and a multi-surface security workflow, but the latest main-branch CI and deployment workflows failed. Treat the README badge as unverified until the failures are fixed.",interview:"BOLA/IDOR threat modelling, state graphs, exploit evidence, SARIF reporting, patch review and false-positive control.",next:"Fix the failing CI and deployment pipelines, then publish a reproducible authorised test target with verified findings and safe remediation.",repo:"https://github.com/PSP-YN/Aegis-Agent",priority:"Lead"},
-  {rank:8,name:"UIPath_automate",category:"AI & Automation",status:"Runnable local workflow demos",summary:"Two local business workflow demonstrations for invoice review and customer-support triage, with explicit human approval before sensitive actions.",stack:["Python","SQLite","Ollama","Workflow automation"],evidence:"README provides executable CLI commands, sample data, audit events, idempotency checks and a unittest suite. It explicitly states that it is not yet a deployed UiPath Maestro project.",interview:"Human-in-the-loop automation, deterministic rules, auditability, idempotency, retries and safe separation of analysis from approval.",next:"Import or recreate both flows in UiPath Maestro and record the required end-to-end contest demonstration.",repo:"https://github.com/PSP-YN/UIPath_automate",priority:"Technical"},
-  {rank:9,name:"smiriti",category:"AI & Automation",status:"Android prototype · release unverified",summary:"An offline-first Android notebook for importing documents, extracting text, searching semantically and asking questions with citations.",stack:["Flutter","ObjectBox","llama.cpp","TFLite","ML Kit"],evidence:"Repository documents local inference, OCR, embeddings, biometric lock and a Flutter build path. A signed release or verified store distribution was not established in this audit.",interview:"On-device RAG, document chunking, vector retrieval, mobile inference constraints, privacy and secure local storage.",next:"Build and install a release APK on a real Android phone, measure memory/latency and test citation faithfulness on a fixed document set.",repo:"https://github.com/PSP-YN/smiriti",priority:"Technical"},
-  {rank:10,name:"RoadSoS",category:"Product",status:"Hackathon prototype · integrations pending",summary:"A mobile emergency-response workflow combining location sharing, emergency contacts, structured first-aid guidance and an incident summary.",stack:["Flutter","Firebase","Maps","SMS"],evidence:"The README describes SOS and offline-first workflows, but also identifies a simulated ambulance API call and dependencies for messaging and live place data. It is not a validated emergency service.",interview:"Critical-path UX, offline design, location permissions, deterministic triage, fail-safe messaging and safety testing.",next:"Test failure modes with emergency-service stakeholders, validate medical content and replace simulated integrations before real-world use.",repo:"https://github.com/PSP-YN/road-safety_iit-hackathon",priority:"Technical"},
-  {rank:11,name:"FRAS",category:"AI & Automation",status:"GPU service concept · deployment unverified",summary:"A GPU-accelerated face-recognition attendance and access-monitoring microservice designed for camera streams and campus systems.",stack:["Python","FastAPI","YOLOv8","InsightFace","FAISS","Redis"],evidence:"The README specifies a detailed camera-to-embedding-to-event pipeline. No live deployment, camera acceptance test or measured field accuracy was established in this review.",interview:"Computer-vision pipeline design, vector similarity, camera ingestion, event streams, multi-tenancy and operational monitoring.",next:"Use consented test data, publish false-match/false-reject metrics and complete privacy, retention, access-control and bias reviews before any pilot.",repo:"https://github.com/PSP-YN/fras",priority:"Technical"},
-  {rank:12,name:"JunctionOptima",category:"AI & Automation",status:"Simulation prototype · optimizer needs verification",summary:"A railway-junction digital-twin concept intended to simulate conflicts and generate explainable dispatch recommendations.",stack:["React","Vite","FastAPI","Python","Simulation"],evidence:"Repository contains a frontend, backend API, simulation and recommendation structure. Some optimization modules appear skeletal, and the claimed recommendation latency is not independently measured.",interview:"Constraint modelling, simulation design, API boundaries, map visualisation and explainable operational decisions.",next:"Implement and test a baseline optimizer, compare it with a documented heuristic and publish scenario-based evaluation results.",repo:"https://github.com/PSP-YN/JunctionOptima",priority:"Technical"},
-  {rank:13,name:"Girakshar — Speech Platform",category:"AI & Automation",status:"Integration-heavy prototype · accuracy unverified",summary:"A speech platform concept spanning transcription, translation, speaker diarization, text-to-speech and export workflows.",stack:["Node.js","Express","Python","Whisper","pyannote","Coqui"],evidence:"README describes a multi-service architecture and several model/provider options. Accuracy and language-count claims are not supported by a reproducible evaluation in the repository overview.",interview:"Model serving, streaming media, diarization, service orchestration, file processing and latency/cost trade-offs.",next:"Publish a small evaluation corpus, measure word error rate and translation quality, and demonstrate one complete local workflow without paid APIs.",repo:"https://github.com/PSP-YN/tts-stt-translation",priority:"Technical"},
-  {rank:14,name:"AirLLM GUI",category:"AI & Automation",status:"Inference tooling · benchmark claims unverified",summary:"A cross-platform interface and runtime experiments around memory-efficient large-language-model inference.",stack:["Python","AirLLM","Android","Docker","GPU inference"],evidence:"The repository includes desktop/runtime code, an Android client and tests. The 4 GB GPU / 70B inference claim requires a reproducible model, quantisation, latency and memory benchmark.",interview:"Model loading, layer-wise offloading, memory constraints, platform integration and inference profiling.",next:"Publish benchmark scripts and results on named hardware; clearly separate supported model configurations from theoretical maximums.",repo:"https://github.com/PSP-YN/airllm-gui",priority:"Technical"},
-  {rank:15,name:"Particle Motion",category:"Prototypes",status:"Interactive web demo",summary:"A gesture-controlled particle visualisation with hand tracking, touch fallback, visual presets and audio-reactive effects.",stack:["React","TypeScript","Three.js","MediaPipe"],evidence:"README includes a concrete project structure and local npm build/run instructions. Public deployment and measured device compatibility were not established.",interview:"WebGL rendering, gesture recognition, real-time interaction, rendering performance and graceful input fallbacks.",next:"Publish a live demo and record frame-rate tests on integrated and mobile GPUs.",repo:"https://github.com/PSP-YN/particle-motion",priority:"Prototype"},
-  {rank:16,name:"GeoAlarm",category:"Prototypes",status:"Mobile/backend prototype · architecture incomplete",summary:"A Flutter alarm concept that triggers on entering, leaving or dwelling within a geographic area.",stack:["Flutter","Dart","Node.js","TypeScript","Maps"],evidence:"README describes a broad microservice and cloud architecture, but marks PostgreSQL and Redis as planned and retains placeholder organisation links. Production deployment is not verified.",interview:"Geofencing, background execution, battery-aware location sampling, notification reliability and mobile permission design.",next:"Complete persistence and background geofence tests, replace placeholder references and document an actual deployment before claiming production readiness.",repo:"https://github.com/PSP-YN/alarm-with-map",priority:"Prototype"},
-  {rank:17,name:"DFRG",category:"Security",status:"Early scaffold · core screens are placeholders",summary:"An Android-first digital-footprint privacy concept with authentication, language support and a planned scan-to-insight workflow.",stack:["FastAPI","Expo","React Native","Supabase"],evidence:"The repository has backend/auth and database scaffolding, but scan, insights and action screens are explicitly placeholders in the documented project structure.",interview:"Privacy product design, API boundaries, authentication, mobile/backend integration and consent-driven data handling.",next:"Implement one real data-source integration and one complete user-visible risk-to-action workflow before expanding scope.",repo:"https://github.com/PSP-YN/dfrg",priority:"Prototype"},
-  {rank:18,name:"Sampark",category:"Systems",status:"Application shell · core automation unavailable",summary:"A cross-platform device-management interface with a local SQLite registry, automation definitions and settings.",stack:["Flutter","Dart","SQLite"],evidence:"The README explicitly says pairing, connectivity, messaging, automation execution, secure credential storage and transfers are not operational. CI failures also appeared in recent dependency-update runs.",interview:"Cross-platform app structure, local persistence, capability boundaries and staged systems integration.",next:"Implement one secure end-to-end device pairing and command workflow before marketing it as a device automation hub.",repo:"https://github.com/PSP-YN/Sampark",priority:"Prototype"},
-  {rank:19,name:"ARTEMIS",category:"Prototypes",status:"Upstream fork · own contributions need isolation",summary:"A fork of Google's ARTEMIS Android automation project. Only independently authored changes should be attributed as personal engineering work.",stack:["Python","Android","MCP","Automation"],evidence:"GitHub repository metadata identifies google/artemis as the parent and source repository. The upstream README and benchmark claims are not evidence of original authorship.",interview:"Discuss only specific commits, bug fixes, tests or extensions you personally implemented.",next:"Review the fork diff against upstream and document your exact contribution or remove it from the featured portfolio.",repo:"https://github.com/PSP-YN/artemis",priority:"Archive"},
-  {rank:20,name:"Intelligence Traffic Management",category:"Prototypes",status:"Repository skeleton · no implementation",summary:"An early repository placeholder for an intelligent traffic-management concept.",stack:["Not established"],evidence:"The current Git tree contains only .gitignore; no application implementation or runnable workflow was found.",interview:"Do not present as a completed project. Discuss only if you later add working code.",next:"Build a small, testable traffic scenario before including it in a project showcase.",repo:"https://github.com/PSP-YN/intelligence-traffic-management-system",priority:"Archive"},
-  {rank:21,name:"Mysuru Tourism Enhancement",category:"Prototypes",status:"Repository skeleton · no implementation",summary:"An early repository placeholder for a Mysuru tourism concept.",stack:["Not established"],evidence:"The current Git tree contains only .gitignore; no application implementation or runnable workflow was found.",interview:"Do not present as completed work until there is a demonstrable product.",next:"Define a narrow user problem and implement one complete visitor workflow.",repo:"https://github.com/PSP-YN/mysuru-tourism-enhancement",priority:"Archive"},
-  {rank:22,name:"Scientific Calculator Game",category:"Prototypes",status:"Empty repository",summary:"A selected repository with no committed implementation available for review.",stack:["Not established"],evidence:"GitHub reports that the repository is empty.",interview:"No defensible engineering claims can be made from the repository yet.",next:"Create the initial implementation and tests before showcasing it.",repo:"https://github.com/PSP-YN/Scientific-calculator-game",priority:"Archive"},
-  {rank:23,name:"NEXA",category:"Prototypes",status:"Empty repository",summary:"A selected repository with no committed implementation available for review.",stack:["Not established"],evidence:"GitHub reports that the repository is empty.",interview:"No defensible engineering claims can be made from the repository yet.",next:"Create the initial implementation and tests before showcasing it.",repo:"https://github.com/PSP-YN/NEXA",priority:"Archive"}
+  {rank:1,name:"CareerOS",category:"Product",status:"Deployed · CI passing",summary:"A career-planning workspace connecting role definition, skill-gap analysis, learning roadmaps, interview practice and application tracking.",stack:["JavaScript","Supabase","Vercel","Gemini"],evidence:"Live product surface and recent successful main-branch verification. Guest mode, resume tools, interview rounds and optional authenticated AI reviews are documented. Payments and some cloud integrations still require configuration.",interview:"Product architecture, user journeys, local-first guest mode, Supabase RLS, server-side AI quota controls and monetisation boundaries.",next:"Validate the complete sign-in and cloud-sync journey, finish legal launch details, and run end-to-end tests for any enabled paid flow.",live:"https://careeros-intelligence.vercel.app",priority:"Lead"},
+  {rank:2,name:"DaemonX",category:"AI & Automation",status:"Local platform · CI passing",summary:"A Linux-controlled Android automation and personal knowledge platform combining ADB, accessibility trees, OCR, computer vision and an MCP interface.",stack:["Python","MCP","ADB","Tesseract","OpenCV","SQLite"],evidence:"Latest main-branch CI passed on 30 October 2026. The project documentation 27 tests, resumable task execution and a local dashboard; real-device workflows still need a repeatable demonstration.",interview:"Observe–act–verify loops, multimodal perception, task checkpointing, idempotent actions, MCP tool design and safe file quarantine.",next:"Record a complete workflow on a physical Android device, publish a reproducible benchmark and document device-specific limitations.",priority:"Lead"},
+  {rank:3,name:"LangAssist",category:"Systems",status:"Linux desktop · CI passing",summary:"An offline, non-LLM grammar assistant for GNOME Wayland that uses accessibility APIs to inspect text and apply corrections in place.",stack:["Rust","Harper","AT-SPI","GTK4","Libadwaita"],evidence:"Main-branch CI passed. The implementation documents password/terminal exclusions, stale-offset guards, a live AT-SPI verification script and local performance benchmarks.",interview:"Linux accessibility, event-driven desktop integration, transactional edits, privacy boundaries, Rust architecture and performance measurement.",next:"Publish a compatibility matrix from real GTK, Chromium and Electron tests, plus a short screen recording of the edit workflow.",priority:"Lead"},
+  {rank:4,name:"NexHelp",category:"Product",status:"Pilot candidate · CI passing",summary:"A trust-first home-services marketplace for customers and verified local professionals, initially scoped to plumbing and electrical services in Bengaluru.",stack:["Flutter","Supabase","PostgreSQL","Next.js","RLS"],evidence:"Latest main-branch CI passed. project documentation mobile customer/provider flows, database migrations, RLS, an operations dashboard and 50 automated tests. Supabase, messaging and store-release steps remain.",interview:"Marketplace workflows, role-based access, database invariants, provider verification, dispatch operations and staged geographic rollout.",next:"Provision the backend, test customer-to-provider fulfilment with real pilot users, and validate dispute and cancellation handling.",priority:"Lead"},
+  {rank:5,name:"SyncSphere",category:"Product",status:"App prototype · CI and release passing",summary:"A campus event network with student, faculty and admin roles, event discovery, moderation, team formation, chat and reminders.",stack:["Expo","React Native","TypeScript","Supabase","PostgreSQL"],evidence:"Main-branch CI and automatic release workflows passed. A public web presence exists; the mobile experience still depends on Supabase project setup and deployment configuration.",interview:"Postgres RLS, role separation, moderation workflows, realtime messaging, atomic rate limits and mobile product architecture.",next:"Run a controlled campus pilot, test RLS with adversarial role cases and measure event creation-to-attendance conversion.",live:"https://syncsphere-campus.vercel.app",priority:"Lead"},
+  {rank:6,name:"NOVA",category:"AI & Automation",status:"Active build · integrations need verification",summary:"A Linux desktop AI agent concept with a persistent command centre, accessibility-tree perception, automation, local knowledge retrieval and a stateful orb interface.",stack:["Python","Linux","AT-SPI","Ollama","SQLite","Wayland"],evidence:"Recently updated repository and a README claim of 168 passing tests. No recent GitHub Actions run was found, so the full integration set and test claim need direct reproduction.",interview:"Desktop agent architecture, accessibility-based perception, event loops, tool execution, memory retrieval and human approval states.",next:"Publish a clean installation path, test every advertised integration on a fresh Fedora environment and record a complete end-to-end task.",priority:"Lead"},
+  {rank:7,name:"Aegis Agent",category:"Security",status:"Advanced prototype · CI currently failing",summary:"An application-security platform exploring browser and IDE discovery, application-state graphs, threat modelling, deterministic evidence and remediation.",stack:["Python","FastAPI","Chrome MV3","VS Code","SARIF"],evidence:"The repository describes 89 tests and a multi-surface security workflow, but the latest main-branch CI and deployment workflows failed. Treat the README badge as unverified until the failures are fixed.",interview:"BOLA/IDOR threat modelling, state graphs, exploit evidence, SARIF reporting, patch review and false-positive control.",next:"Fix the failing CI and deployment pipelines, then publish a reproducible authorised test target with verified findings and safe remediation.",priority:"Lead"},
+  {rank:8,name:"UIPath_automate",category:"AI & Automation",status:"Runnable local workflow demos",summary:"Two local business workflow demonstrations for invoice review and customer-support triage, with explicit human approval before sensitive actions.",stack:["Python","SQLite","Ollama","Workflow automation"],evidence:"README provides executable CLI commands, sample data, audit events, idempotency checks and a unittest suite. It explicitly states that it is not yet a deployed UiPath Maestro project.",interview:"Human-in-the-loop automation, deterministic rules, auditability, idempotency, retries and safe separation of analysis from approval.",next:"Import or recreate both flows in UiPath Maestro and record the required end-to-end contest demonstration.",priority:"Technical"},
+  {rank:9,name:"smiriti",category:"AI & Automation",status:"Android prototype · release unverified",summary:"An offline-first Android notebook for importing documents, extracting text, searching semantically and asking questions with citations.",stack:["Flutter","ObjectBox","llama.cpp","TFLite","ML Kit"],evidence:"project documentation local inference, OCR, embeddings, biometric lock and a Flutter build path. A signed release or verified store distribution was not established in this audit.",interview:"On-device RAG, document chunking, vector retrieval, mobile inference constraints, privacy and secure local storage.",next:"Build and install a release APK on a real Android phone, measure memory/latency and test citation faithfulness on a fixed document set.",priority:"Technical"},
+  {rank:10,name:"RoadSoS",category:"Product",status:"Hackathon prototype · integrations pending",summary:"A mobile emergency-response workflow combining location sharing, emergency contacts, structured first-aid guidance and an incident summary.",stack:["Flutter","Firebase","Maps","SMS"],evidence:"The README describes SOS and offline-first workflows, but also identifies a simulated ambulance API call and dependencies for messaging and live place data. It is not a validated emergency service.",interview:"Critical-path UX, offline design, location permissions, deterministic triage, fail-safe messaging and safety testing.",next:"Test failure modes with emergency-service stakeholders, validate medical content and replace simulated integrations before real-world use.",priority:"Technical"},
+  {rank:11,name:"FRAS",category:"AI & Automation",status:"GPU service concept · deployment unverified",summary:"A GPU-accelerated face-recognition attendance and access-monitoring microservice designed for camera streams and campus systems.",stack:["Python","FastAPI","YOLOv8","InsightFace","FAISS","Redis"],evidence:"The README specifies a detailed camera-to-embedding-to-event pipeline. No live deployment, camera acceptance test or measured field accuracy was established in this review.",interview:"Computer-vision pipeline design, vector similarity, camera ingestion, event streams, multi-tenancy and operational monitoring.",next:"Use consented test data, publish false-match/false-reject metrics and complete privacy, retention, access-control and bias reviews before any pilot.",priority:"Technical"},
+  {rank:12,name:"JunctionOptima",category:"AI & Automation",status:"Simulation prototype · optimizer needs verification",summary:"A railway-junction digital-twin concept intended to simulate conflicts and generate explainable dispatch recommendations.",stack:["React","Vite","FastAPI","Python","Simulation"],evidence:"Repository contains a frontend, backend API, simulation and recommendation structure. Some optimization modules appear skeletal, and the claimed recommendation latency is not independently measured.",interview:"Constraint modelling, simulation design, API boundaries, map visualisation and explainable operational decisions.",next:"Implement and test a baseline optimizer, compare it with a documented heuristic and publish scenario-based evaluation results.",priority:"Technical"},
+  {rank:13,name:"Girakshar — Speech Platform",category:"AI & Automation",status:"Integration-heavy prototype · accuracy unverified",summary:"A speech platform concept spanning transcription, translation, speaker diarization, text-to-speech and export workflows.",stack:["Node.js","Express","Python","Whisper","pyannote","Coqui"],evidence:"README describes a multi-service architecture and several model/provider options. Accuracy and language-count claims are not supported by a reproducible evaluation in the repository overview.",interview:"Model serving, streaming media, diarization, service orchestration, file processing and latency/cost trade-offs.",next:"Publish a small evaluation corpus, measure word error rate and translation quality, and demonstrate one complete local workflow without paid APIs.",priority:"Technical"},
+  {rank:14,name:"AirLLM GUI",category:"AI & Automation",status:"Inference tooling · benchmark claims unverified",summary:"A cross-platform interface and runtime experiments around memory-efficient large-language-model inference.",stack:["Python","AirLLM","Android","Docker","GPU inference"],evidence:"The repository includes desktop/runtime code, an Android client and tests. The 4 GB GPU / 70B inference claim requires a reproducible model, quantisation, latency and memory benchmark.",interview:"Model loading, layer-wise offloading, memory constraints, platform integration and inference profiling.",next:"Publish benchmark scripts and results on named hardware; clearly separate supported model configurations from theoretical maximums.",priority:"Technical"},
+  {rank:15,name:"Particle Motion",category:"Prototypes",status:"Interactive web demo",summary:"A gesture-controlled particle visualisation with hand tracking, touch fallback, visual presets and audio-reactive effects.",stack:["React","TypeScript","Three.js","MediaPipe"],evidence:"README includes a concrete project structure and local npm build/run instructions. Public deployment and measured device compatibility were not established.",interview:"WebGL rendering, gesture recognition, real-time interaction, rendering performance and graceful input fallbacks.",next:"Publish a live demo and record frame-rate tests on integrated and mobile GPUs.",priority:"Prototype"},
+  {rank:16,name:"GeoAlarm",category:"Prototypes",status:"Mobile/backend prototype · architecture incomplete",summary:"A Flutter alarm concept that triggers on entering, leaving or dwelling within a geographic area.",stack:["Flutter","Dart","Node.js","TypeScript","Maps"],evidence:"README describes a broad microservice and cloud architecture, but marks PostgreSQL and Redis as planned and retains placeholder organisation links. Production deployment is not verified.",interview:"Geofencing, background execution, battery-aware location sampling, notification reliability and mobile permission design.",next:"Complete persistence and background geofence tests, replace placeholder references and document an actual deployment before claiming production readiness.",priority:"Prototype"},
+  {rank:17,name:"DFRG",category:"Security",status:"Early scaffold · core screens are placeholders",summary:"An Android-first digital-footprint privacy concept with authentication, language support and a planned scan-to-insight workflow.",stack:["FastAPI","Expo","React Native","Supabase"],evidence:"The repository has backend/auth and database scaffolding, but scan, insights and action screens are explicitly placeholders in the documented project structure.",interview:"Privacy product design, API boundaries, authentication, mobile/backend integration and consent-driven data handling.",next:"Implement one real data-source integration and one complete user-visible risk-to-action workflow before expanding scope.",priority:"Prototype"},
+  {rank:18,name:"Sampark",category:"Systems",status:"Application shell · core automation unavailable",summary:"A cross-platform device-management interface with a local SQLite registry, automation definitions and settings.",stack:["Flutter","Dart","SQLite"],evidence:"The README explicitly says pairing, connectivity, messaging, automation execution, secure credential storage and transfers are not operational. CI failures also appeared in recent dependency-update runs.",interview:"Cross-platform app structure, local persistence, capability boundaries and staged systems integration.",next:"Implement one secure end-to-end device pairing and command workflow before marketing it as a device automation hub.",priority:"Prototype"},
+  {rank:19,name:"ARTEMIS",category:"Prototypes",status:"Upstream fork · own contributions need isolation",summary:"A fork of Google's ARTEMIS Android automation project. Only independently authored changes should be attributed as personal engineering work.",stack:["Python","Android","MCP","Automation"],evidence:"GitHub repository metadata identifies google/artemis as the parent and source repository. The upstream README and benchmark claims are not evidence of original authorship.",interview:"Discuss only specific commits, bug fixes, tests or extensions you personally implemented.",next:"Review the fork diff against upstream and document your exact contribution or remove it from the featured portfolio.",priority:"Archive"},
+  {rank:20,name:"Intelligence Traffic Management",category:"Prototypes",status:"Repository skeleton · no implementation",summary:"An early repository placeholder for an intelligent traffic-management concept.",stack:["Not established"],evidence:"The current Git tree contains only .gitignore; no application implementation or runnable workflow was found.",interview:"Do not present as a completed project. Discuss only if you later add working code.",next:"Build a small, testable traffic scenario before including it in a project showcase.",priority:"Archive"},
+  {rank:21,name:"Mysuru Tourism Enhancement",category:"Prototypes",status:"Repository skeleton · no implementation",summary:"An early repository placeholder for a Mysuru tourism concept.",stack:["Not established"],evidence:"The current Git tree contains only .gitignore; no application implementation or runnable workflow was found.",interview:"Do not present as completed work until there is a demonstrable product.",next:"Define a narrow user problem and implement one complete visitor workflow.",priority:"Archive"},
+  {rank:22,name:"Scientific Calculator Game",category:"Prototypes",status:"Empty repository",summary:"A selected repository with no committed implementation available for review.",stack:["Not established"],evidence:"GitHub reports that the repository is empty.",interview:"No defensible engineering claims can be made from the repository yet.",next:"Create the initial implementation and tests before showcasing it.",priority:"Archive"},
+  {rank:23,name:"NEXA",category:"Prototypes",status:"Empty repository",summary:"A selected repository with no committed implementation available for review.",stack:["Not established"],evidence:"GitHub reports that the repository is empty.",interview:"No defensible engineering claims can be made from the repository yet.",next:"Create the initial implementation and tests before showcasing it.",priority:"Archive"}
 ];
 
 const filters: Array<"All" | Category> = ["All","Product","AI & Automation","Systems","Security","Prototypes"];
-
-function HeroScene() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let renderer: THREE.WebGLRenderer;
-    try {
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
-      camera.position.z = 6.3;
-      renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.6));
-      renderer.setClearColor(0x000000, 0);
-      const core = new THREE.Group();
-      scene.add(core);
-      const geometry = new THREE.IcosahedronGeometry(1.35, 5);
-      const sphere = new THREE.Mesh(geometry, new THREE.MeshPhysicalMaterial({
-        color: 0xb25916, metalness: 0.72, roughness: 0.22, clearcoat: 1, clearcoatRoughness: 0.14
-      }));
-      core.add(sphere);
-      const wire = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({
-        color: 0xe6b778, wireframe: true, transparent: true, opacity: 0.18
-      }));
-      wire.scale.setScalar(1.006);
-      core.add(wire);
-      const ringA = new THREE.Mesh(
-        new THREE.TorusGeometry(1.82, 0.008, 8, 180),
-        new THREE.MeshBasicMaterial({ color: 0xde9338, transparent: true, opacity: 0.72 })
-      );
-      ringA.rotation.set(0.8, 0.3, 0.2);
-      core.add(ringA);
-      const ringB = new THREE.Mesh(
-        new THREE.TorusGeometry(2.12, 0.005, 8, 180),
-        new THREE.MeshBasicMaterial({ color: 0xe6b778, transparent: true, opacity: 0.34 })
-      );
-      ringB.rotation.set(1.22, 0.72, -0.38);
-      core.add(ringB);
-      const count = 720;
-      const positions = new Float32Array(count * 3);
-      for (let i = 0; i < count; i++) {
-        const radius = 2.3 + Math.random() * 0.85;
-        const theta = Math.random() * Math.PI * 2;
-        const phi = Math.acos(2 * Math.random() - 1);
-        positions[i * 3] = radius * Math.sin(phi) * Math.cos(theta);
-        positions[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
-        positions[i * 3 + 2] = radius * Math.cos(phi);
-      }
-      const particleGeometry = new THREE.BufferGeometry();
-      particleGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
-      const particles = new THREE.Points(particleGeometry, new THREE.PointsMaterial({
-        color: 0xf3e6d5, size: 0.014, transparent: true, opacity: 0.82
-      }));
-      core.add(particles);
-      scene.add(new THREE.AmbientLight(0xf3e6d5, 1.3));
-      const key = new THREE.PointLight(0xde9338, 45, 12);
-      key.position.set(3, 2, 4);
-      scene.add(key);
-      const fill = new THREE.PointLight(0xb25916, 28, 12);
-      fill.position.set(-3, -2, 2);
-      scene.add(fill);
-      let pointerX = 0;
-      let pointerY = 0;
-      const onPointer = (event: PointerEvent) => {
-        pointerX = (event.clientX / window.innerWidth - 0.5) * 0.28;
-        pointerY = (event.clientY / window.innerHeight - 0.5) * 0.22;
-      };
-      window.addEventListener("pointermove", onPointer, { passive: true });
-      const resize = () => {
-        if (!canvas) return;
-        const width = canvas.clientWidth;
-        const height = canvas.clientHeight;
-        if (!width || !height) return;
-        renderer.setSize(width, height, false);
-        camera.aspect = width / height;
-        camera.updateProjectionMatrix();
-      };
-      const observer = new ResizeObserver(resize);
-      observer.observe(canvas);
-      resize();
-      const clock = new THREE.Clock();
-      let frame = 0;
-      const animate = () => {
-        const time = clock.getElapsedTime();
-        core.rotation.y = time * 0.11 + pointerX;
-        core.rotation.x = Math.sin(time * 0.2) * 0.08 + pointerY;
-        sphere.rotation.y = time * 0.045;
-        wire.rotation.y = -time * 0.027;
-        ringA.rotation.z = time * 0.075;
-        ringB.rotation.y = -time * 0.06;
-        particles.rotation.y = -time * 0.018;
-        renderer.render(scene, camera);
-        frame = window.requestAnimationFrame(animate);
-      };
-      animate();
-      return () => {
-        window.cancelAnimationFrame(frame);
-        observer.disconnect();
-        window.removeEventListener("pointermove", onPointer);
-        geometry.dispose();
-        sphere.material.dispose();
-        wire.material.dispose();
-        ringA.geometry.dispose();
-        (ringA.material as THREE.Material).dispose();
-        ringB.geometry.dispose();
-        (ringB.material as THREE.Material).dispose();
-        particleGeometry.dispose();
-        (particles.material as THREE.Material).dispose();
-        renderer.dispose();
-      };
-    } catch {
-      canvas.style.display = "none";
-    }
-  }, []);
-  return <canvas id="hero-canvas" ref={canvasRef} aria-label="Animated 3D amber particle sculpture" />;
-}
 
 export default function PortfolioClient() {
   const [category, setCategory] = useState<"All" | Category>("All");
@@ -262,10 +145,17 @@ export default function PortfolioClient() {
             </div>
           </div>
           <div className="hero-visual">
-            <HeroScene />
-            <div className="orbit-note note-a"><small>Engineering focus</small><b>Systems that work</b></div>
-            <div className="orbit-note note-b"><small>Portfolio review</small><b>23 selected repositories</b></div>
-            <div className="hero-caption">A practical bias toward shipped work</div>
+            <div className="hero-editorial">
+              <div className="hero-editorial-top"><span>INDEPENDENT ENGINEERING PORTFOLIO</span><span>01 — 07</span></div>
+              <div className="hero-editorial-statement">From problem<br />to <em>working product.</em></div>
+              <p>Research the need. Design the system. Build the workflow. Validate it in practice.</p>
+              <div className="hero-editorial-grid">
+                <div className="hero-editorial-item"><small>FOCUS 01</small><strong>Product engineering</strong><span>Web · Mobile · Full-stack</span></div>
+                <div className="hero-editorial-item"><small>FOCUS 02</small><strong>Applied intelligence</strong><span>AI · Automation · Systems</span></div>
+                <div className="hero-editorial-item"><small>FOCUS 03</small><strong>Trust & reliability</strong><span>Security · Privacy · Testing</span></div>
+              </div>
+              <div className="hero-editorial-bottom"><span>VVCE · MYSURU, INDIA</span><span>BUILD / VERIFY / IMPROVE</span></div>
+            </div>
           </div>
         </div>
         <div className="scroll-hint">Scroll to explore ↓</div>
@@ -393,11 +283,11 @@ export default function PortfolioClient() {
         <div className="wrap">
           <div className="section-head reveal">
             <div><span className="eyebrow">06 / GitHub activity & achievements</span><h2>Work you can inspect.</h2></div>
-            <p>Contribution activity, public GitHub achievements and the repositories behind the work. Live cards update independently; the dated snapshot below is taken from the profile on 1 November 2026.</p>
+            <p>A concise view of public work, selected projects and verified GitHub achievements.</p>
           </div>
           <div className="activity-stats">
-            <article className="activity-stat reveal"><small>Repositories</small><strong>67</strong><span>In the connected GitHub account</span></article>
-            <article className="activity-stat reveal"><small>Contributions</small><strong>635</strong><span>Private repositories · 2–31 Oct 2026</span></article>
+            <article className="activity-stat reveal"><small>Public repositories</small><strong>27</strong><span>Publicly visible projects and experiments</span></article>
+            <article className="activity-stat reveal"><small>Selected projects</small><strong>23</strong><span>Curated for this portfolio</span></article>
             <article className="activity-stat reveal"><small>Profile achievements</small><strong>02</strong><span>Pull Shark · YOLO</span></article>
           </div>
           <a className="recent-contribution reveal" href="https://github.com/PSP-YN/CareerOS/pull/2" target="_blank" rel="noreferrer">
@@ -406,12 +296,6 @@ export default function PortfolioClient() {
           </a>
           <div className="activity-panel reveal">
             <div className="activity-panel-head"><div><span className="eyebrow">Contribution history</span><h3>Consistency over snapshots.</h3></div><a href="https://github.com/PSP-YN" target="_blank" rel="noreferrer">Open GitHub profile <ArrowUpRight size={13} /></a></div>
-            <div className="contribution-calendar">
-              <img src="https://ghchart.rshah.org/B25916/PSP-YN" alt="GitHub contribution calendar for PSP-YN" loading="lazy" />
-            </div>
-            <div className="activity-live-grid">
-              <div className="activity-live-card"><small>Live contribution streak</small><img src="https://streak-stats.demolab.com?user=PSP-YN&hide_border=true&background=160E08&ring=B25916&fire=DE9338&currStreakLabel=E6B778&sideLabels=F3E6D5&dates=C5A98C&currStreakNum=FAFAF7&sideNums=FAFAF7" alt="Live GitHub contribution streak for PSP-YN" loading="lazy" /></div>
-            </div>
           </div>
           <div className="achievement-grid">
             <a className="achievement-card reveal" href="https://github.com/PSP-YN?achievement=pull-shark&tab=achievements" target="_blank" rel="noreferrer">
@@ -423,7 +307,7 @@ export default function PortfolioClient() {
               <span><small>GitHub achievement</small><strong>YOLO</strong><em>GitHub profile achievement.</em></span><ArrowUpRight size={15} />
             </a>
           </div>
-          <p className="activity-footnote">Contribution counts can include private repository activity when GitHub privacy settings allow it. The contribution calendar and streak card are generated by third-party services and may be temporarily unavailable. The 635 figure is a dated GitHub profile snapshot, not an all-time total.</p>
+          <p className="activity-footnote">Repository totals count public repositories only. Project cards describe the work without exposing source links; live product links are shown only where a public website is available.</p>
         </div>
       </section>
 
@@ -462,8 +346,8 @@ export default function PortfolioClient() {
             <div className="modal-block"><small>Implementation evidence</small><p>{selected.evidence}</p></div>
             <div className="modal-block"><small>Interview discussion</small><p>{selected.interview}</p></div>
             <div className="modal-block"><small>Next engineering milestone</small><p>{selected.next}</p></div>
-            <div className="modal-block"><small>Technology noted in repository</small><div className="lead-tags" style={{marginTop:9}}>{selected.stack.map((tag) => <span key={tag}>{tag}</span>)}</div></div>
-            <div className="modal-links">{selected.live && <a className="modal-link" href={selected.live} target="_blank" rel="noreferrer">Open live product <ExternalLink size={13} /></a>}<a className="modal-link" href={selected.repo} target="_blank" rel="noreferrer">Open repository <ExternalLink size={13} /></a></div>
+            <div className="modal-block"><small>Technology stack</small><div className="lead-tags" style={{marginTop:9}}>{selected.stack.map((tag) => <span key={tag}>{tag}</span>)}</div></div>
+            <div className="modal-links">{selected.live && <a className="modal-link" href={selected.live} target="_blank" rel="noreferrer">Visit live website <ArrowUpRight size={13} /></a>}</div>
           </section>
         </div>
       )}
