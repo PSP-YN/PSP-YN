@@ -5,7 +5,7 @@ import * as THREE from "three";
 import {
   ArrowDown, ArrowRight, ArrowUpRight, BrainCircuit, BriefcaseBusiness,
   CheckCircle2, Code2, Cpu, ExternalLink, Github, GraduationCap, Layers3,
-  Linkedin, Mail, Menu, Search, ShieldCheck, Smartphone, Sparkles, Workflow, X
+  Linkedin, Mail, Menu, Search, ShieldCheck, Smartphone, Sparkles, Workflow, X, Instagram, AtSign, MessageCircle
 } from "lucide-react";
 
 type Category = "Product" | "AI & Automation" | "Systems" | "Security" | "Prototypes";
@@ -238,6 +238,7 @@ export default function PortfolioClient() {
             <a href="#work" onClick={() => setMenuOpen(false)}>Selected work</a>
             <a href="#explorer" onClick={() => setMenuOpen(false)}>All projects</a>
             <a href="#approach" onClick={() => setMenuOpen(false)}>Approach</a>
+            <a href="#activity" onClick={() => setMenuOpen(false)}>Activity</a>
             <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
             <a className="nav-cta" href="https://github.com/PSP-YN" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={13} /></a>
           </nav>
@@ -387,11 +388,47 @@ export default function PortfolioClient() {
         </div>
       </section>
 
+
+      <section className="section" id="activity">
+        <div className="wrap">
+          <div className="section-head reveal">
+            <div><span className="eyebrow">06 / GitHub activity & achievements</span><h2>Work you can inspect.</h2></div>
+            <p>Contribution activity, public GitHub achievements and the repositories behind the work. Live cards update independently; the dated snapshot below is taken from the profile on 1 November 2026.</p>
+          </div>
+          <div className="activity-stats">
+            <article className="activity-stat reveal"><small>Repositories</small><strong>67</strong><span>In the connected GitHub account</span></article>
+            <article className="activity-stat reveal"><small>Contributions</small><strong>635</strong><span>Private repositories · 2–31 Oct 2026</span></article>
+            <article className="activity-stat reveal"><small>Profile achievements</small><strong>02</strong><span>Pull Shark · YOLO</span></article>
+          </div>
+          <div className="activity-panel reveal">
+            <div className="activity-panel-head"><div><span className="eyebrow">Contribution history</span><h3>Consistency over snapshots.</h3></div><a href="https://github.com/PSP-YN" target="_blank" rel="noreferrer">Open GitHub profile <ArrowUpRight size={13} /></a></div>
+            <div className="contribution-calendar">
+              <img src="https://ghchart.rshah.org/B25916/PSP-YN" alt="GitHub contribution calendar for PSP-YN" loading="lazy" />
+            </div>
+            <div className="activity-live-grid">
+              <div className="activity-live-card"><small>Live contribution streak</small><img src="https://streak-stats.demolab.com?user=PSP-YN&hide_border=true&background=160E08&ring=B25916&fire=DE9338&currStreakLabel=E6B778&sideLabels=F3E6D5&dates=C5A98C&currStreakNum=FAFAF7&sideNums=FAFAF7" alt="Live GitHub contribution streak for PSP-YN" loading="lazy" /></div>
+              <div className="activity-live-card"><small>GitHub profile statistics</small><img src="https://github-readme-stats.vercel.app/api?username=PSP-YN&show_icons=true&hide_border=true&bg_color=160E08&title_color=DE9338&text_color=F3E6D5&icon_color=B25916" alt="GitHub profile statistics for PSP-YN" loading="lazy" /></div>
+            </div>
+          </div>
+          <div className="achievement-grid">
+            <a className="achievement-card reveal" href="https://github.com/PSP-YN?achievement=pull-shark&tab=achievements" target="_blank" rel="noreferrer">
+              <img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" alt="GitHub Pull Shark achievement" loading="lazy" />
+              <span><small>GitHub achievement</small><strong>Pull Shark</strong><em>Recognises merged pull request activity.</em></span><ArrowUpRight size={15} />
+            </a>
+            <a className="achievement-card reveal" href="https://github.com/PSP-YN?achievement=yolo&tab=achievements" target="_blank" rel="noreferrer">
+              <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" alt="GitHub YOLO achievement" loading="lazy" />
+              <span><small>GitHub achievement</small><strong>YOLO</strong><em>GitHub profile achievement.</em></span><ArrowUpRight size={15} />
+            </a>
+          </div>
+          <p className="activity-footnote">Contribution counts can include private repository activity when GitHub privacy settings allow it. Streak and statistics cards are provided by third-party services and may be temporarily unavailable. The 635 figure is a dated GitHub profile snapshot, not an all-time total.</p>
+        </div>
+      </section>
+
       <section className="section" id="contact">
         <div className="wrap">
           <div className="contact-panel reveal">
             <div>
-              <span className="eyebrow">06 / Contact</span>
+              <span className="eyebrow">07 / Contact</span>
               <h2>Have a real problem worth building for?</h2>
               <p>Open to thoughtful conversations about software engineering, applied AI, product ideas, internships and early-stage collaboration.</p>
             </div>
@@ -399,6 +436,9 @@ export default function PortfolioClient() {
               <a className="btn btn-primary" href="mailto:psppspyn13@gmail.com"><Mail size={15} /> Email me</a>
               <a className="btn btn-ghost" href="https://linkedin.com/in/pspyn" target="_blank" rel="noreferrer"><Linkedin size={15} /> LinkedIn <ArrowUpRight size={13} /></a>
               <a className="btn btn-ghost" href="https://github.com/PSP-YN" target="_blank" rel="noreferrer"><Github size={15} /> GitHub <ArrowUpRight size={13} /></a>
+              <a className="btn btn-ghost" href="https://x.com/PSP_YN13" target="_blank" rel="noreferrer"><AtSign size={15} /> X <ArrowUpRight size={13} /></a>
+              <a className="btn btn-ghost" href="https://www.reddit.com/user/PSP_YN/" target="_blank" rel="noreferrer"><MessageCircle size={15} /> Reddit <ArrowUpRight size={13} /></a>
+              <a className="btn btn-ghost" href="https://instagram.com/psp_yn13" target="_blank" rel="noreferrer"><Instagram size={15} /> Instagram <ArrowUpRight size={13} /></a>
             </div>
           </div>
         </div>
