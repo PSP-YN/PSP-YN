@@ -5,7 +5,7 @@
 I am interested in building practical software at the intersection of full-stack engineering, applied AI, cybersecurity, automation, and product development. I approach projects by understanding the problem, prototyping a useful solution, testing assumptions, and being transparent about what is complete and what is still in progress.
 
 <p align="left">
-  <a href="https://pspyn-portfolio-pspyn.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-Visit-101827?style=for-the-badge&logo=githubpages&logoColor=white"></a>
+  <a href="https://pspyn-portfolio-pspyn.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-Visit-101827?style=for-the-badge&logo=vercel&logoColor=white"></a>
   <a href="https://linkedin.com/in/pspyn"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="https://github.com/PSP-YN"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-PSP--YN-181717?style=for-the-badge&logo=github"></a>
   <a href="mailto:puttashankarprasadyn11@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
