@@ -1,25 +1,24 @@
 <!--
-  PSP-YN | Profile README
-  Visual language: midnight navy, mineral teal and periwinkle.
-  Keep claims evidence-based; project statuses are intentionally explicit.
+  PSP-YN GitHub profile README
+  Portfolio order is based on repository evidence, implementation maturity,
+  practical impact, launch potential and interview value.
 -->
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/PSP-YN/PSP-YN/main/assets/profile-readme-header.svg" alt="Engineering with intent — Putta Shankar Prasad Y N" width="100%">
   <br><br>
-  <a href="https://pspyn-portfolio.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-Visit-101a2a?style=flat-square&labelColor=101a2a&color=7ce7d3" alt="Portfolio"></a>
-  <a href="https://linkedin.com/in/pspyn"><img src="https://img.shields.io/badge/LINKEDIN-Connect-101a2a?style=flat-square&labelColor=101a2a&color=8da7ff" alt="LinkedIn"></a>
-  <a href="mailto:psppspyn13@gmail.com"><img src="https://img.shields.io/badge/EMAIL-Personal-101a2a?style=flat-square&labelColor=101a2a&color=c4a4ff" alt="Personal email"></a>
-  <a href="mailto:vvce25cse0402@vvce.ac.in"><img src="https://img.shields.io/badge/VVCE-Email-101a2a?style=flat-square&labelColor=101a2a&color=8da7ff" alt="VVCE email"></a>
+  <a href="https://pspyn-portfolio.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-Visit-77330D?style=flat-square&labelColor=77330D&color=DE9338" alt="Portfolio"></a>
+  <a href="https://linkedin.com/in/pspyn"><img src="https://img.shields.io/badge/LINKEDIN-Connect-77330D?style=flat-square&labelColor=77330D&color=E6B778" alt="LinkedIn"></a>
+  <a href="mailto:psppspyn13@gmail.com"><img src="https://img.shields.io/badge/EMAIL-Contact-77330D?style=flat-square&labelColor=77330D&color=B25916" alt="Email"></a>
 </div>
 
 ---
 
 ## Profile
 
-I'm a Computer Science and Engineering undergraduate at **Vidyavardhaka College of Engineering (VVCE), Mysuru, India**. I build and experiment with software products, with current interests across **full-stack engineering, applied AI, application security and developer tooling**.
+I'm a Computer Science and Engineering undergraduate at **Vidyavardhaka College of Engineering (VVCE), Mysuru, India**. I build and experiment with software across **product engineering, applied AI, developer automation, Linux systems and application security**.
 
-I like working across the product lifecycle: understanding a problem, shaping a practical solution, implementing the system, testing its behaviour and improving it from feedback. I use AI-assisted development tools, but treat architecture, verification and the final engineering decisions as my responsibility.
+My approach is to understand the problem, design a practical system, implement a complete workflow and verify its behaviour. I use AI-assisted development tools, but architecture, testing, technical decisions and the final result remain my responsibility.
 
 | | |
 |---|---|
@@ -27,45 +26,105 @@ I like working across the product lifecycle: understanding a problem, shaping a 
 | **Academic recognition** | CSE Best Achiever · 2025–26 |
 | **Academic record** | 8.70 CGPA through Semester II |
 | **Community** | ASPERA · VVCE entrepreneurship club |
-| **Current focus** | Full-stack products · Applied AI · Application security |
+| **Current focus** | Full-stack products · Applied AI · Automation · AppSec |
 
-## Selected engineering work
+## Featured engineering work
 
-A deliberately focused selection. Each status describes the current state rather than implying production readiness.
+The projects below lead my portfolio because they offer the strongest combination of implementation evidence, practical relevance and technical discussion. Status is stated conservatively.
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/PSP-YN/CareerOS">CareerOS</a> <sup>↗</sup></h3>
-      <p>Career development workspace for turning a target role into a structured plan: skill-gap analysis, learning roadmaps and interview preparation.</p>
-      <p><strong>State:</strong> Deployed · evolving</p>
-      <p><sub>Product thinking · Full-stack development · Career tooling</sub></p>
-      <a href="https://careeros-intelligence.vercel.app">Live application</a>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/PSP-YN/Meeting_Vault">Meeting Vault</a> <sup>↗</sup></h3>
-      <p>Audiovisual meeting capture and archive concept, focused on bringing recordings and meeting context into a searchable, organised workspace.</p>
-      <p><strong>State:</strong> In development</p>
-      <p><sub>Media workflows · Capture systems · Information retrieval</sub></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/PSP-YN/Aegis-Agent">Aegis Agent</a> <sup>↗</sup></h3>
-      <p>Application-security tooling exploring browser and IDE signals, application-state mapping, security evidence and actionable remediation.</p>
-      <p><strong>State:</strong> In development</p>
-      <p><sub>AppSec · Browser tooling · Developer experience</sub></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/PSP-YN/LangAssist">LangAssist</a> <sup>↗</sup></h3>
-      <p>Lightweight, local-first grammar assistance for Linux desktop workflows, with an emphasis on practical system integration.</p>
-      <p><strong>State:</strong> In development</p>
-      <p><sub>Linux · Desktop integration · Privacy-first software</sub></p>
-    </td>
-  </tr>
-</table>
+### 1. CareerOS — Career development workspace
 
-More experiments and coursework live in the <a href="https://github.com/PSP-YN?tab=repositories">repositories</a>. Project maturity varies; the status above is the source of truth.
+A career-planning product connecting target roles, skill-gap analysis, learning roadmaps, interview practice and application tracking.
+
+- **State:** Deployed and evolving; recent main-branch CI passed.
+- **Engineering:** Resume tooling, structured interview rounds, guest workspace, Supabase-backed sync and optional authenticated AI reviews.
+- **Not claimed:** Paid subscriptions are not live until merchant configuration and end-to-end verification are complete.
+- **Stack:** JavaScript · Supabase · Vercel · Gemini.
+- **Repository:** [PSP-YN/CareerOS](https://github.com/PSP-YN/CareerOS)
+
+### 2. DaemonX — Android automation and personal knowledge platform
+
+A Linux-controlled Android automation system combining ADB, accessibility-tree inspection, OCR, computer vision, task persistence and an MCP interface.
+
+- **State:** Active local platform; latest main-branch CI passed on 30 October 2026.
+- **Engineering:** Observe–act–verify workflows, resumable tasks, SQLite FTS5 knowledge indexing and a local dashboard.
+- **Validation still needed:** A repeatable physical-device demonstration and measured device-compatibility results.
+- **Stack:** Python · MCP · ADB · Tesseract · OpenCV · SQLite.
+- **Repository:** [PSP-YN/DaemonX](https://github.com/PSP-YN/DaemonX)
+
+### 3. LangAssist — Offline Linux desktop writing assistant
+
+A lightweight, non-LLM grammar and spelling assistant using Linux accessibility APIs to inspect text fields and apply corrections in place.
+
+- **State:** Linux desktop implementation; main-branch CI passed.
+- **Engineering:** Rust core, Harper rules, AT-SPI integration, sensitive-field exclusions and guarded in-place edits.
+- **Validation still needed:** A published compatibility matrix across GTK, Chromium and Electron applications.
+- **Stack:** Rust · Harper · AT-SPI · GTK4 · Libadwaita.
+- **Repository:** [PSP-YN/LangAssist](https://github.com/PSP-YN/LangAssist)
+
+### 4. NexHelp — Trust-first home-services marketplace
+
+A customer/provider marketplace initially scoped to plumbing and electrical services in Bengaluru.
+
+- **State:** Pilot candidate; latest main-branch CI passed.
+- **Engineering:** Flutter mobile app, PostgreSQL migrations, Supabase RLS, provider verification and an internal operations dashboard.
+- **Validation still needed:** Provisioned services, messaging setup, real provider onboarding and a controlled pilot.
+- **Stack:** Flutter · Supabase · PostgreSQL · Next.js.
+- **Repository:** [PSP-YN/NexHelp](https://github.com/PSP-YN/NexHelp)
+
+### 5. SyncSphere — Campus event network
+
+A campus platform for event discovery, student/faculty/admin roles, moderation, team formation, chat and reminders.
+
+- **State:** App prototype; main-branch CI and release workflows passed.
+- **Engineering:** Expo/React Native, TypeScript, Supabase Auth, PostgreSQL RLS and realtime workflows.
+- **Validation still needed:** A controlled campus pilot, adversarial RLS testing and evidence of actual adoption.
+- **Stack:** Expo · React Native · TypeScript · Supabase.
+- **Repository:** [PSP-YN/SyncSphere](https://github.com/PSP-YN/SyncSphere)
+
+### 6. NOVA — Linux desktop AI agent
+
+A desktop-agent project exploring accessibility-based perception, local knowledge retrieval, task execution and a persistent command interface.
+
+- **State:** Active build; README reports 168 tests, but no recent GitHub Actions run was found during this review.
+- **Validation still needed:** Reproduce the test suite on a clean environment and demonstrate the advertised integrations end to end.
+- **Stack:** Python · Linux · AT-SPI · Ollama · SQLite.
+- **Repository:** [PSP-YN/NOVA](https://github.com/PSP-YN/NOVA)
+
+### 7. Aegis Agent — Application security assessment platform
+
+A security engineering project exploring browser/IDE discovery, application-state graphs, threat modelling, evidence and remediation.
+
+- **State:** Advanced prototype; latest main-branch CI and deployment workflows failed in the repository audit.
+- **Engineering:** FastAPI core, Chrome extension, IDE extension, SARIF reporting and remediation workflows.
+- **Next milestone:** Restore CI/CD and publish a reproducible authorised security test target.
+- **Stack:** Python · FastAPI · Chrome MV3 · VS Code · SARIF.
+- **Repository:** [PSP-YN/Aegis-Agent](https://github.com/PSP-YN/Aegis-Agent)
+
+## Additional selected repositories
+
+These projects are included because they were explicitly selected for this portfolio. Their status is not equivalent to the featured projects above.
+
+| Rank | Project | Current assessment | Repository |
+|---:|---|---|---|
+| 8 | UIPath_automate | Runnable local invoice-review and support-triage demos; human approval and audit trail. Not yet a deployed UiPath Maestro project. | [Open](https://github.com/PSP-YN/UIPath_automate) |
+| 9 | smiriti | Offline Android document notebook with local RAG, OCR and embeddings; release build and device performance need verification. | [Open](https://github.com/PSP-YN/smiriti) |
+| 10 | RoadSoS | Emergency-response hackathon prototype; some service integrations are simulated or pending validation. | [Open](https://github.com/PSP-YN/road-safety_iit-hackathon) |
+| 11 | FRAS | GPU face-recognition attendance service concept; camera deployment, accuracy and privacy controls need validation. | [Open](https://github.com/PSP-YN/fras) |
+| 12 | JunctionOptima | Railway junction simulation and dispatch concept; optimizer implementation and evaluation need verification. | [Open](https://github.com/PSP-YN/JunctionOptima) |
+| 13 | Girakshar / Speech Platform | STT, translation, diarization and TTS concept; model accuracy and end-to-end workflows need reproducible tests. | [Open](https://github.com/PSP-YN/tts-stt-translation) |
+| 14 | AirLLM GUI | Large-model inference tooling; hardware and 4 GB GPU claims require reproducible benchmarks. | [Open](https://github.com/PSP-YN/airllm-gui) |
+| 15 | Particle Motion | Gesture-controlled Three.js particle visualisation; useful interactive graphics demonstration. | [Open](https://github.com/PSP-YN/particle-motion) |
+| 16 | GeoAlarm | Geofenced alarm prototype; README's production claims conflict with database/cache components marked planned. | [Open](https://github.com/PSP-YN/alarm-with-map) |
+| 17 | DFRG | Digital-footprint privacy scaffold; core scan, insight and action screens are placeholders. | [Open](https://github.com/PSP-YN/dfrg) |
+| 18 | Sampark | Flutter app shell and local registry; device pairing, messaging and automation execution are not operational. | [Open](https://github.com/PSP-YN/Sampark) |
+| 19 | ARTEMIS | Fork of google/artemis. Only independently authored contributions should be attributed as my work. | [Open](https://github.com/PSP-YN/artemis) |
+| 20 | Intelligence Traffic Management | Repository currently contains only .gitignore; no implementation found. | [Open](https://github.com/PSP-YN/intelligence-traffic-management-system) |
+| 21 | Mysuru Tourism Enhancement | Repository currently contains only .gitignore; no implementation found. | [Open](https://github.com/PSP-YN/mysuru-tourism-enhancement) |
+| 22 | Scientific Calculator Game | Empty repository; no implementation available for review. | [Open](https://github.com/PSP-YN/Scientific-calculator-game) |
+| 23 | NEXA | Empty repository; no implementation available for review. | [Open](https://github.com/PSP-YN/NEXA) |
+
+**Portfolio methodology:** This order is a qualitative prioritisation based on repository contents, recent CI evidence, implementation maturity, practical relevance, launch dependencies and interview value. It is not proof of customer adoption, production reliability or commercial traction. A passing CI run verifies only the checks configured in that workflow.
 
 ## Technical landscape
 
@@ -75,53 +134,52 @@ Tools and technologies I have used or explored through projects and coursework. 
 
 **LANGUAGES**
 
-<img src="https://skillicons.dev/icons?i=c,cpp,python,js,ts&theme=dark" alt="C, C++, Python, JavaScript and TypeScript">
+<img src="https://skillicons.dev/icons?i=c,cpp,python,rust,js,ts,dart&theme=light" alt="C, C++, Python, Rust, JavaScript, TypeScript and Dart">
 
-**WEB & APPLICATION DEVELOPMENT**
+**WEB, MOBILE & BACKEND**
 
-<img src="https://skillicons.dev/icons?i=html,css,react,nextjs,nodejs,flutter&theme=dark" alt="HTML, CSS, React, Next.js, Node.js and Flutter">
+<img src="https://skillicons.dev/icons?i=html,css,react,nextjs,nodejs,flutter,fastapi&theme=light" alt="HTML, CSS, React, Next.js, Node.js, Flutter and FastAPI">
 
 **DATA, PLATFORM & TOOLING**
 
-<img src="https://skillicons.dev/icons?i=postgres,supabase,docker,linux,git,github,vercel,cloudflare&theme=dark" alt="PostgreSQL, Supabase, Docker, Linux, Git, GitHub, Vercel and Cloudflare">
+<img src="https://skillicons.dev/icons?i=postgres,supabase,sqlite,docker,linux,git,github,vercel,cloudflare&theme=light" alt="PostgreSQL, Supabase, SQLite, Docker, Linux, Git, GitHub, Vercel and Cloudflare">
 
 </div>
 
-| Engineering area | Current interests |
-|---|---|
-| **Product engineering** | Responsive interfaces, API integration, end-to-end workflows |
-| **Applied AI** | Practical AI features, structured outputs, AI-assisted development |
-| **Application security** | Web application risks, security testing, evidence-led fixes |
-| **Systems & tooling** | Linux workflows, automation, developer productivity |
+## Learning and participation
 
-## Learning, building & participation
-
-- **VVCE CSE Best Achiever** — 2025–26; academic record of 8.70 CGPA through Semester II.
-- **ASPERA, VVCE** — participation in the college's entrepreneurship and innovation community.
-- **PES Mandya Pioneer / Pioneer 3.0**, **Infothon 7.0**, **CODE RED 3.0 (Round 1)** — selected event participation.
-- **Smart India Hackathon 2026** — team problem-statement work around SIH26264 and SIH26265. Participation only; not claiming a win or finalist position.
+- **VVCE CSE Best Achiever** — 2025–26; 8.70 CGPA through Semester II.
+- **ASPERA, VVCE** — entrepreneurship and innovation community participation.
+- **PES Mandya Pioneer / Pioneer 3.0**, **Infothon 7.0**, **CODE RED 3.0 (Round 1)** and **SolveCon 2026**.
+- **Smart India Hackathon 2026** — team problem-statement work around SIH26264 and SIH26265. Participation only; no win or finalist claim.
 
 ### Selected learning credentials
 
-C Programming Fundamentals (University of California, Santa Cruz) · Artificial Intelligence: An Overview (Politecnico di Milano) · Information & Digital Literacy for University Success (The University of Sydney) · Electrical Power Generation — An Industrial Outlook (L&T EduTech).
+C Programming Fundamentals (University of California, Santa Cruz) · Artificial Intelligence: An Overview (Politecnico di Milano) · Information & Digital Literacy for University Success (University of Sydney) · Electrical Power Generation — An Industrial Outlook (L&T EduTech).
 
-A broader record of learning and credentials is available on <a href="https://linkedin.com/in/pspyn">LinkedIn</a>.
+## GitHub activity
+
+<div align="center">
+  <img height="150" src="https://github-readme-stats.vercel.app/api?username=PSP-YN&show_icons=true&hide_border=true&bg_color=00000000&title_color=B25916&text_color=77330D&icon_color=DE9338" alt="GitHub profile statistics">
+  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PSP-YN&layout=compact&hide_border=true&bg_color=00000000&title_color=B25916&text_color=77330D" alt="Most used GitHub languages">
+</div>
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=PSP-YN&hide_border=true&background=00000000&ring=B25916&fire=DE9338&currStreakLabel=77330D&sideLabels=77330D&dates=9B704D&currStreakNum=B25916&sideNums=B25916" alt="GitHub contribution streak">
+</div>
 
 ## Connect
 
 <div align="center">
 
-<a href="https://pspyn-portfolio.vercel.app/"><strong>Portfolio</strong></a> &nbsp;·&nbsp;
-<a href="https://github.com/PSP-YN"><strong>GitHub</strong></a> &nbsp;·&nbsp;
-<a href="https://linkedin.com/in/pspyn"><strong>LinkedIn</strong></a>
+[Portfolio](https://pspyn-portfolio.vercel.app/) · [GitHub](https://github.com/PSP-YN) · [LinkedIn](https://linkedin.com/in/pspyn)
 
-**Personal** · [psppspyn13@gmail.com](mailto:psppspyn13@gmail.com)  
-**VVCE** · [vvce25cse0402@vvce.ac.in](mailto:vvce25cse0402@vvce.ac.in)
+**Personal:** [psppspyn13@gmail.com](mailto:psppspyn13@gmail.com)  
+**VVCE:** [vvce25cse0402@vvce.ac.in](mailto:vvce25cse0402@vvce.ac.in)
 
 </div>
 
 ---
 
 <div align="center">
-  <sub>Build with curiosity. Validate with evidence. Ship with intent.</sub>
+  <sub>Build with curiosity. Verify with evidence. Ship with intent.</sub>
 </div>
