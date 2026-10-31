@@ -295,7 +295,8 @@ export default function PortfolioClient() {
             <span className="recent-contribution-link">View merged PR <ArrowUpRight size={13} /></span>
           </a>
           <div className="activity-panel reveal">
-            <div className="activity-panel-head"><div><span className="eyebrow">Contribution history</span><h3>Consistency over snapshots.</h3></div><a href="https://github.com/PSP-YN" target="_blank" rel="noreferrer">Open GitHub profile <ArrowUpRight size={13} /></a></div>
+            <div className="activity-panel-head"><div><span className="eyebrow">Portfolio approach</span><h3>Evidence before claims.</h3></div><a href="https://github.com/PSP-YN" target="_blank" rel="noreferrer">Public GitHub profile <ArrowUpRight size={13} /></a></div>
+            <p className="activity-footnote">This portfolio focuses on selected projects, implementation evidence and the next engineering milestones. Source-code destinations are intentionally not exposed here. Where a public website is available, it is linked from that project’s detail view.</p>
           </div>
           <div className="achievement-grid">
             <a className="achievement-card reveal" href="https://github.com/PSP-YN?achievement=pull-shark&tab=achievements" target="_blank" rel="noreferrer">
