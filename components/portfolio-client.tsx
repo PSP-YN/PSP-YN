@@ -374,7 +374,7 @@ export default function PortfolioClient() {
           </div>
           <div className="education-grid">
             <article className="education-card reveal"><small><GraduationCap size={13} /> Education</small><h3>Vidyavardhaka College of Engineering</h3><p>B.E. Computer Science & Engineering · Mysuru, Karnataka. CSE Best Achiever 2025–26; 8.70 CGPA through Semester II.</p></article>
-            <article className="education-card reveal"><small><BriefcaseBusiness size={13} /> Community & events</small><h3>ASPERA and technical participation</h3><p>ASPERA entrepreneurship club, PES Mandya Pioneer / Pioneer 3.0, Infothon 7.0, CODE RED 3.0 (Round 1), SolveCon 2026 and SIH 2026 problem-statement work. No finalist or win claim is implied.</p></article>
+            <article className="education-card reveal"><small><BriefcaseBusiness size={13} /> Community & events</small><h3>ASPERA and technical participation</h3><p>ASPERA entrepreneurship club, PES Mandya Pioneer / Pioneer 3.0, Infothon 7.0, CODE RED 3.0 (Round 1), SolveCon 2026, Startup Hackathon 3.0, workshops and SIH 2026 problem-statement work. No finalist or win claim is implied.</p></article>
           </div>
           <div className="education-card reveal" style={{marginTop:16}}>
             <small><Sparkles size={13} /> Selected learning credentials</small>
@@ -407,7 +407,6 @@ export default function PortfolioClient() {
             </div>
             <div className="activity-live-grid">
               <div className="activity-live-card"><small>Live contribution streak</small><img src="https://streak-stats.demolab.com?user=PSP-YN&hide_border=true&background=160E08&ring=B25916&fire=DE9338&currStreakLabel=E6B778&sideLabels=F3E6D5&dates=C5A98C&currStreakNum=FAFAF7&sideNums=FAFAF7" alt="Live GitHub contribution streak for PSP-YN" loading="lazy" /></div>
-              <div className="activity-live-card"><small>GitHub profile statistics</small><img src="https://github-readme-stats.vercel.app/api?username=PSP-YN&show_icons=true&hide_border=true&bg_color=160E08&title_color=DE9338&text_color=F3E6D5&icon_color=B25916" alt="GitHub profile statistics for PSP-YN" loading="lazy" /></div>
             </div>
           </div>
           <div className="achievement-grid">
