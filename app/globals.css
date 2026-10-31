@@ -208,7 +208,7 @@ button { cursor: pointer; }
 .activity-panel-head a { display:inline-flex; align-items:center; gap:6px; color:var(--honey); font-size:10px; font-weight:700; }
 .contribution-calendar { padding:17px; overflow:hidden; border:1px solid var(--line); border-radius:9px; background:rgba(10,7,4,.4); }
 .contribution-calendar img { display:block; width:100%; height:auto; min-height:90px; object-fit:contain; }
-.activity-live-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px; }
+.activity-live-grid { display:grid; grid-template-columns:minmax(0,540px); gap:12px; margin-top:12px; }
 .activity-live-card { min-width:0; padding:17px; border:1px solid var(--line); border-radius:9px; background:rgba(10,7,4,.34); }
 .activity-live-card img { display:block; width:100%; height:auto; margin-top:12px; }
 .achievement-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:14px; }
