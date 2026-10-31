@@ -195,3 +195,36 @@ button { cursor: pointer; }
   *,*::before,*::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* GitHub activity, verified achievements and social contact */
+.activity-stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-bottom:14px; }
+.activity-stat { padding:21px; border:1px solid var(--line); border-radius:11px; background:linear-gradient(145deg,rgba(52,33,20,.82),rgba(35,22,13,.72)); }
+.activity-stat small,.activity-live-card small { display:block; color:var(--apricot); font:9px "SFMono-Regular",Consolas,monospace; letter-spacing:.14em; text-transform:uppercase; }
+.activity-stat strong { display:block; margin:8px 0 4px; color:var(--ivory); font-size:36px; font-weight:850; letter-spacing:-.07em; line-height:1.1; }
+.activity-stat span { color:var(--muted); font-size:10px; }
+.activity-panel { padding:25px; border:1px solid var(--line); border-radius:14px; background:rgba(255,255,255,.025); }
+.activity-panel-head { display:flex; justify-content:space-between; align-items:end; gap:15px; margin-bottom:18px; }
+.activity-panel-head h3 { margin:7px 0 0; color:var(--ivory); font-size:20px; letter-spacing:-.04em; }
+.activity-panel-head a { display:inline-flex; align-items:center; gap:6px; color:var(--honey); font-size:10px; font-weight:700; }
+.contribution-calendar { padding:17px; overflow:hidden; border:1px solid var(--line); border-radius:9px; background:rgba(10,7,4,.4); }
+.contribution-calendar img { display:block; width:100%; height:auto; min-height:90px; object-fit:contain; }
+.activity-live-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px; }
+.activity-live-card { min-width:0; padding:17px; border:1px solid var(--line); border-radius:9px; background:rgba(10,7,4,.34); }
+.activity-live-card img { display:block; width:100%; height:auto; margin-top:12px; }
+.achievement-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:14px; }
+.achievement-card { display:flex; align-items:center; gap:15px; padding:17px; border:1px solid rgba(222,147,56,.3); border-radius:10px; background:var(--cream); color:var(--rust); transition:transform .2s,box-shadow .2s; }
+.achievement-card:hover { transform:translateY(-3px); box-shadow:0 14px 30px rgba(0,0,0,.18); }
+.achievement-card img { width:56px; height:56px; object-fit:contain; flex:none; }
+.achievement-card span { display:grid; gap:3px; flex:1; }
+.achievement-card small { color:var(--amber); font:8px "SFMono-Regular",Consolas,monospace; letter-spacing:.13em; text-transform:uppercase; }
+.achievement-card strong { color:var(--rust); font-size:15px; }
+.achievement-card em { color:#80502d; font-size:10px; font-style:normal; }
+.achievement-card>svg { color:var(--amber); flex:none; }
+.activity-footnote { margin:13px 2px 0; color:#a98a6c; font-size:10px; line-height:1.7; }
+@media (max-width:720px) {
+  .activity-stats,.activity-live-grid,.achievement-grid { grid-template-columns:1fr; }
+  .activity-panel { padding:14px; }
+  .activity-panel-head { align-items:start; flex-direction:column; }
+  .contribution-calendar { padding:8px; overflow-x:auto; }
+  .contribution-calendar img { min-width:620px; }
+}
