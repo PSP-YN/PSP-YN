@@ -228,3 +228,12 @@ button { cursor: pointer; }
   .contribution-calendar { padding:8px; overflow-x:auto; }
   .contribution-calendar img { min-width:620px; }
 }
+
+.recent-contribution { display:flex; justify-content:space-between; align-items:center; gap:18px; margin:0 0 14px; padding:20px 22px; border:1px solid rgba(222,147,56,.35); border-radius:11px; background:linear-gradient(110deg,rgba(178,89,22,.2),rgba(52,33,20,.7)); transition:transform .2s,border-color .2s; }
+.recent-contribution:hover { transform:translateY(-2px); border-color:rgba(222,147,56,.7); }
+.recent-contribution>div { display:grid; gap:5px; }
+.recent-contribution small { color:var(--apricot); font:9px "SFMono-Regular",Consolas,monospace; letter-spacing:.12em; text-transform:uppercase; }
+.recent-contribution strong { color:var(--ivory); font-size:14px; }
+.recent-contribution>div>span { color:var(--muted); font-size:10px; }
+.recent-contribution-link { display:inline-flex; align-items:center; gap:6px; color:var(--honey); font-size:10px; font-weight:750; white-space:nowrap; }
+@media (max-width:720px) { .recent-contribution { align-items:flex-start; flex-direction:column; padding:16px; } }
