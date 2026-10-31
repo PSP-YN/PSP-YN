@@ -40,6 +40,7 @@ A career-planning product connecting target roles, skill-gap analysis, learning 
 - **Engineering:** Resume tooling, structured interview rounds, guest workspace, Supabase-backed sync and optional authenticated AI reviews.
 - **Not claimed:** Paid subscriptions are not live until merchant configuration and end-to-end verification are complete.
 - **Stack:** JavaScript · Supabase · Vercel · Gemini.
+- **Live product:** [careeros-intelligence.vercel.app](https://careeros-intelligence.vercel.app)  
 - **Repository:** [PSP-YN/CareerOS](https://github.com/PSP-YN/CareerOS)
 
 ### 2. DaemonX — Android automation and personal knowledge platform
