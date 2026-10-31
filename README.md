@@ -13,7 +13,7 @@
 <p align="center">
   <a href="https://pspyn-portfolio.vercel.app/">Portfolio</a> ·
   <a href="https://linkedin.com/in/pspyn">LinkedIn</a> ·
-  <a href="mailto:puttashankarprasadyn11@gmail.com">Email</a>
+  <a href="mailto:psppspyn13@gmail.com">Personal email</a> · <a href="mailto:vvce25cse0402@vvce.ac.in">VVCE email</a>
 </p>
 
 ---
@@ -60,6 +60,7 @@ Selected learning includes C programming (UC Santa Cruz), Python, AI fundamental
 - **Portfolio:** https://pspyn-portfolio.vercel.app/
 - **LinkedIn:** https://linkedin.com/in/pspyn
 - **GitHub:** https://github.com/PSP-YN
-- **Email:** puttashankarprasadyn11@gmail.com
+- **Personal email:** psppspyn13@gmail.com
+- **VVCE email:** vvce25cse0402@vvce.ac.in
 
 <p align="center"><sub>Learning by building · Engineering with intent · Improving through feedback</sub></p>
