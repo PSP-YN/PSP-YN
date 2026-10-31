@@ -1,6 +1,6 @@
 <!--
   PSP-YN GitHub profile README
-  Portfolio order is based on repository evidence, implementation maturity,
+  Portfolio order is based on implementation evidence, implementation maturity,
   practical impact, launch potential and interview value.
 -->
 
@@ -94,7 +94,7 @@ A security engineering project exploring browser/IDE discovery, application-stat
 These projects are included because they were explicitly selected for this portfolio. Their status is not equivalent to the featured projects above.
 
 | Rank | Project | Current assessment |
-|---:|---|---|---|
+|---:|---|---|
 | 8 | UIPath_automate | Runnable local invoice-review and support-triage demos; human approval and audit trail. Not yet a deployed UiPath Maestro project. |
 | 9 | smiriti | Offline Android document notebook with local RAG, OCR and embeddings; release build and device performance need verification. |
 | 10 | RoadSoS | Emergency-response hackathon prototype; some service integrations are simulated or pending validation. |
@@ -112,7 +112,7 @@ These projects are included because they were explicitly selected for this portf
 | 22 | Scientific Calculator Game | Empty repository; no implementation available for review. |
 | 23 | NEXA | Empty repository; no implementation available for review. |
 
-**Portfolio methodology:** This order is a qualitative prioritisation based on repository contents, recent CI evidence, implementation maturity, practical relevance, launch dependencies and interview value. It is not proof of customer adoption, production reliability or commercial traction. A passing CI run verifies only the checks configured in that workflow.
+**Portfolio methodology:** This order is a qualitative prioritisation based on project implementation, recent CI evidence, implementation maturity, practical relevance, launch dependencies and interview value. It is not proof of customer adoption, production reliability or commercial traction. A passing CI run verifies only the checks configured in that workflow.
 
 ## Technical landscape
 
