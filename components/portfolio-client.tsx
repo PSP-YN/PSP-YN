@@ -214,8 +214,8 @@ export default function PortfolioClient() {
       <section className="section" id="explorer">
         <div className="wrap">
           <div className="section-head reveal">
-            <div><span className="eyebrow">03 / Repository explorer</span><h2>The full selected set.</h2></div>
-            <p>All 23 repositories you selected, ordered by portfolio value. Search by project or technology, filter by category, and open a card for evidence, interview angles and the next engineering step.</p>
+            <div><span className="eyebrow">03 / Project explorer</span><h2>The complete selected set.</h2></div>
+            <p>All 23 selected projects, ordered by portfolio value. Search by project or technology, filter by category, and open a card for evidence, interview angles and the next engineering step.</p>
           </div>
           <div className="explorer reveal">
             <div className="explorer-tools">
