@@ -1,6 +1,6 @@
 <!--
   PSP-YN GitHub profile README
-  Portfolio order is based on implementation evidence, implementation maturity,
+  Portfolio order is based on implementation evidence and maturity,
   practical impact, launch potential and interview value.
 -->
 
@@ -89,7 +89,7 @@ A security engineering project exploring browser/IDE discovery, application-stat
 - **Engineering:** FastAPI core, Chrome extension, IDE extension, SARIF reporting and remediation workflows.
 - **Next milestone:** Restore CI/CD and publish a reproducible authorised security test target.
 - **Stack:** Python · FastAPI · Chrome MV3 · VS Code · SARIF.
-## Additional selected repositories
+## Additional selected projects
 
 These projects are included because they were explicitly selected for this portfolio. Their status is not equivalent to the featured projects above.
 
@@ -109,8 +109,8 @@ These projects are included because they were explicitly selected for this portf
 | 19 | ARTEMIS | Fork of google/artemis. Only independently authored contributions should be attributed as my work. |
 | 20 | Intelligence Traffic Management | Repository currently contains only .gitignore; no implementation found. |
 | 21 | Mysuru Tourism Enhancement | Repository currently contains only .gitignore; no implementation found. |
-| 22 | Scientific Calculator Game | Empty repository; no implementation available for review. |
-| 23 | NEXA | Empty repository; no implementation available for review. |
+| 22 | Scientific Calculator Game | No implementation is available for review yet. |
+| 23 | NEXA | No implementation is available for review yet. |
 
 **Portfolio methodology:** This order is a qualitative prioritisation based on project implementation, recent CI evidence, implementation maturity, practical relevance, launch dependencies and interview value. It is not proof of customer adoption, production reliability or commercial traction. A passing CI run verifies only the checks configured in that workflow.
 
