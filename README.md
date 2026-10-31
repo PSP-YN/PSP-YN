@@ -7,7 +7,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/PSP-YN/PSP-YN/main/assets/profile-readme-header.svg" alt="Engineering with intent — Putta Shankar Prasad Y N" width="100%">
   <br><br>
-  <a href="https://pspyn-portfolio.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-Visit-77330D?style=flat-square&labelColor=77330D&color=DE9338" alt="Portfolio"></a>
+  <a href="https://pspyn.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-Visit-77330D?style=flat-square&labelColor=77330D&color=DE9338" alt="Portfolio"></a>
   <a href="https://linkedin.com/in/pspyn"><img src="https://img.shields.io/badge/LINKEDIN-Connect-77330D?style=flat-square&labelColor=77330D&color=E6B778" alt="LinkedIn"></a>
   <a href="mailto:psppspyn13@gmail.com"><img src="https://img.shields.io/badge/EMAIL-Contact-77330D?style=flat-square&labelColor=77330D&color=B25916" alt="Email"></a>
 </div>
@@ -40,9 +40,7 @@ A career-planning product connecting target roles, skill-gap analysis, learning 
 - **Engineering:** Resume tooling, structured interview rounds, guest workspace, Supabase-backed sync and optional authenticated AI reviews.
 - **Not claimed:** Paid subscriptions are not live until merchant configuration and end-to-end verification are complete.
 - **Stack:** JavaScript · Supabase · Vercel · Gemini.
-- **Live product:** [careeros-intelligence.vercel.app](https://careeros-intelligence.vercel.app)  
-- **Repository:** [PSP-YN/CareerOS](https://github.com/PSP-YN/CareerOS)
-
+- **Live product:** [careeros-intelligence.vercel.app](https://careeros-intelligence.vercel.app)
 ### 2. DaemonX — Android automation and personal knowledge platform
 
 A Linux-controlled Android automation system combining ADB, accessibility-tree inspection, OCR, computer vision, task persistence and an MCP interface.
@@ -51,8 +49,6 @@ A Linux-controlled Android automation system combining ADB, accessibility-tree i
 - **Engineering:** Observe–act–verify workflows, resumable tasks, SQLite FTS5 knowledge indexing and a local dashboard.
 - **Validation still needed:** A repeatable physical-device demonstration and measured device-compatibility results.
 - **Stack:** Python · MCP · ADB · Tesseract · OpenCV · SQLite.
-- **Repository:** [PSP-YN/DaemonX](https://github.com/PSP-YN/DaemonX)
-
 ### 3. LangAssist — Offline Linux desktop writing assistant
 
 A lightweight, non-LLM grammar and spelling assistant using Linux accessibility APIs to inspect text fields and apply corrections in place.
@@ -61,8 +57,6 @@ A lightweight, non-LLM grammar and spelling assistant using Linux accessibility 
 - **Engineering:** Rust core, Harper rules, AT-SPI integration, sensitive-field exclusions and guarded in-place edits.
 - **Validation still needed:** A published compatibility matrix across GTK, Chromium and Electron applications.
 - **Stack:** Rust · Harper · AT-SPI · GTK4 · Libadwaita.
-- **Repository:** [PSP-YN/LangAssist](https://github.com/PSP-YN/LangAssist)
-
 ### 4. NexHelp — Trust-first home-services marketplace
 
 A customer/provider marketplace initially scoped to plumbing and electrical services in Bengaluru.
@@ -71,8 +65,6 @@ A customer/provider marketplace initially scoped to plumbing and electrical serv
 - **Engineering:** Flutter mobile app, PostgreSQL migrations, Supabase RLS, provider verification and an internal operations dashboard.
 - **Validation still needed:** Provisioned services, messaging setup, real provider onboarding and a controlled pilot.
 - **Stack:** Flutter · Supabase · PostgreSQL · Next.js.
-- **Repository:** [PSP-YN/NexHelp](https://github.com/PSP-YN/NexHelp)
-
 ### 5. SyncSphere — Campus event network
 
 A campus platform for event discovery, student/faculty/admin roles, moderation, team formation, chat and reminders.
@@ -81,9 +73,7 @@ A campus platform for event discovery, student/faculty/admin roles, moderation, 
 - **Engineering:** Expo/React Native, TypeScript, Supabase Auth, PostgreSQL RLS and realtime workflows.
 - **Validation still needed:** A controlled campus pilot, adversarial RLS testing and evidence of actual adoption.
 - **Stack:** Expo · React Native · TypeScript · Supabase.
-- **Web presence:** [syncsphere-campus.vercel.app](https://syncsphere-campus.vercel.app)  
-- **Repository:** [PSP-YN/SyncSphere](https://github.com/PSP-YN/SyncSphere)
-
+- **Web presence:** [syncsphere-campus.vercel.app](https://syncsphere-campus.vercel.app)
 ### 6. NOVA — Linux desktop AI agent
 
 A desktop-agent project exploring accessibility-based perception, local knowledge retrieval, task execution and a persistent command interface.
@@ -91,8 +81,6 @@ A desktop-agent project exploring accessibility-based perception, local knowledg
 - **State:** Active build; README reports 168 tests, but no recent GitHub Actions run was found during this review.
 - **Validation still needed:** Reproduce the test suite on a clean environment and demonstrate the advertised integrations end to end.
 - **Stack:** Python · Linux · AT-SPI · Ollama · SQLite.
-- **Repository:** [PSP-YN/NOVA](https://github.com/PSP-YN/NOVA)
-
 ### 7. Aegis Agent — Application security assessment platform
 
 A security engineering project exploring browser/IDE discovery, application-state graphs, threat modelling, evidence and remediation.
@@ -101,30 +89,28 @@ A security engineering project exploring browser/IDE discovery, application-stat
 - **Engineering:** FastAPI core, Chrome extension, IDE extension, SARIF reporting and remediation workflows.
 - **Next milestone:** Restore CI/CD and publish a reproducible authorised security test target.
 - **Stack:** Python · FastAPI · Chrome MV3 · VS Code · SARIF.
-- **Repository:** [PSP-YN/Aegis-Agent](https://github.com/PSP-YN/Aegis-Agent)
-
 ## Additional selected repositories
 
 These projects are included because they were explicitly selected for this portfolio. Their status is not equivalent to the featured projects above.
 
-| Rank | Project | Current assessment | Repository |
+| Rank | Project | Current assessment |
 |---:|---|---|---|
-| 8 | UIPath_automate | Runnable local invoice-review and support-triage demos; human approval and audit trail. Not yet a deployed UiPath Maestro project. | [Open](https://github.com/PSP-YN/UIPath_automate) |
-| 9 | smiriti | Offline Android document notebook with local RAG, OCR and embeddings; release build and device performance need verification. | [Open](https://github.com/PSP-YN/smiriti) |
-| 10 | RoadSoS | Emergency-response hackathon prototype; some service integrations are simulated or pending validation. | [Open](https://github.com/PSP-YN/road-safety_iit-hackathon) |
-| 11 | FRAS | GPU face-recognition attendance service concept; camera deployment, accuracy and privacy controls need validation. | [Open](https://github.com/PSP-YN/fras) |
-| 12 | JunctionOptima | Railway junction simulation and dispatch concept; optimizer implementation and evaluation need verification. | [Open](https://github.com/PSP-YN/JunctionOptima) |
-| 13 | Girakshar / Speech Platform | STT, translation, diarization and TTS concept; model accuracy and end-to-end workflows need reproducible tests. | [Open](https://github.com/PSP-YN/tts-stt-translation) |
-| 14 | AirLLM GUI | Large-model inference tooling; hardware and 4 GB GPU claims require reproducible benchmarks. | [Open](https://github.com/PSP-YN/airllm-gui) |
-| 15 | Particle Motion | Gesture-controlled Three.js particle visualisation; useful interactive graphics demonstration. | [Open](https://github.com/PSP-YN/particle-motion) |
-| 16 | GeoAlarm | Geofenced alarm prototype; README's production claims conflict with database/cache components marked planned. | [Open](https://github.com/PSP-YN/alarm-with-map) |
-| 17 | DFRG | Digital-footprint privacy scaffold; core scan, insight and action screens are placeholders. | [Open](https://github.com/PSP-YN/dfrg) |
-| 18 | Sampark | Flutter app shell and local registry; device pairing, messaging and automation execution are not operational. | [Open](https://github.com/PSP-YN/Sampark) |
-| 19 | ARTEMIS | Fork of google/artemis. Only independently authored contributions should be attributed as my work. | [Open](https://github.com/PSP-YN/artemis) |
-| 20 | Intelligence Traffic Management | Repository currently contains only .gitignore; no implementation found. | [Open](https://github.com/PSP-YN/intelligence-traffic-management-system) |
-| 21 | Mysuru Tourism Enhancement | Repository currently contains only .gitignore; no implementation found. | [Open](https://github.com/PSP-YN/mysuru-tourism-enhancement) |
-| 22 | Scientific Calculator Game | Empty repository; no implementation available for review. | [Open](https://github.com/PSP-YN/Scientific-calculator-game) |
-| 23 | NEXA | Empty repository; no implementation available for review. | [Open](https://github.com/PSP-YN/NEXA) |
+| 8 | UIPath_automate | Runnable local invoice-review and support-triage demos; human approval and audit trail. Not yet a deployed UiPath Maestro project. |
+| 9 | smiriti | Offline Android document notebook with local RAG, OCR and embeddings; release build and device performance need verification. |
+| 10 | RoadSoS | Emergency-response hackathon prototype; some service integrations are simulated or pending validation. |
+| 11 | FRAS | GPU face-recognition attendance service concept; camera deployment, accuracy and privacy controls need validation. |
+| 12 | JunctionOptima | Railway junction simulation and dispatch concept; optimizer implementation and evaluation need verification. |
+| 13 | Girakshar / Speech Platform | STT, translation, diarization and TTS concept; model accuracy and end-to-end workflows need reproducible tests. |
+| 14 | AirLLM GUI | Large-model inference tooling; hardware and 4 GB GPU claims require reproducible benchmarks. |
+| 15 | Particle Motion | Gesture-controlled Three.js particle visualisation; useful interactive graphics demonstration. |
+| 16 | GeoAlarm | Geofenced alarm prototype; README's production claims conflict with database/cache components marked planned. |
+| 17 | DFRG | Digital-footprint privacy scaffold; core scan, insight and action screens are placeholders. |
+| 18 | Sampark | Flutter app shell and local registry; device pairing, messaging and automation execution are not operational. |
+| 19 | ARTEMIS | Fork of google/artemis. Only independently authored contributions should be attributed as my work. |
+| 20 | Intelligence Traffic Management | Repository currently contains only .gitignore; no implementation found. |
+| 21 | Mysuru Tourism Enhancement | Repository currently contains only .gitignore; no implementation found. |
+| 22 | Scientific Calculator Game | Empty repository; no implementation available for review. |
+| 23 | NEXA | Empty repository; no implementation available for review. |
 
 **Portfolio methodology:** This order is a qualitative prioritisation based on repository contents, recent CI evidence, implementation maturity, practical relevance, launch dependencies and interview value. It is not proof of customer adoption, production reliability or commercial traction. A passing CI run verifies only the checks configured in that workflow.
 
@@ -159,16 +145,14 @@ Tools and technologies I have used or explored through projects and coursework. 
 
 C Programming Fundamentals (University of California, Santa Cruz) · Artificial Intelligence: An Overview (Politecnico di Milano) · Information & Digital Literacy for University Success (University of Sydney) · Electrical Power Generation — An Industrial Outlook (L&T EduTech).
 
-## GitHub activity and achievements
-
-A live view of contribution history and account activity. GitHub's contribution graph can include private-repository activity when privacy settings allow it.
+## Public GitHub activity and achievements
 
 **Verified profile snapshot · 1 November 2026**
 
 | Measure | Evidence |
 |---|---|
-| Repositories | 67 repositories visible in the connected GitHub account |
-| Contributions | 635 contributions in private repositories · 2–31 October 2026 |
+| Public repositories | 27 |
+| Selected portfolio projects | 23 |
 | GitHub achievements | Pull Shark · YOLO |
 
 ### Recent merged public contribution
@@ -186,29 +170,13 @@ A live view of contribution history and account activity. GitHub's contribution 
   </a>
 </div>
 
-### Contribution calendar
-
-<div align="center">
-  <a href="https://github.com/PSP-YN">
-    <img src="https://ghchart.rshah.org/B25916/PSP-YN" alt="GitHub contribution calendar for PSP-YN" width="100%">
-  </a>
-</div>
-
-### Live streak and profile statistics
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=PSP-YN&hide_border=true&background=160E08&ring=B25916&fire=DE9338&currStreakLabel=E6B778&sideLabels=F3E6D5&dates=C5A98C&currStreakNum=FAFAF7&sideNums=FAFAF7" alt="GitHub contribution streak">
-</div>
-
-> The 635 figure is a dated profile snapshot for the displayed 30-day window, not an all-time total. The contribution calendar and streak card are generated by third-party services and may be temporarily unavailable. See the [live GitHub profile](https://github.com/PSP-YN) for current data.
-
 ## Connect
 
 <div align="center">
 
-[Portfolio](https://pspyn-portfolio.vercel.app/) · [GitHub](https://github.com/PSP-YN) · [LinkedIn](https://linkedin.com/in/pspyn) · [X](https://x.com/PSP_YN13) · [Reddit](https://www.reddit.com/user/PSP_YN/) · [Instagram](https://instagram.com/psp_yn13)
+[Portfolio](https://pspyn.vercel.app/) · [GitHub](https://github.com/PSP-YN) · [LinkedIn](https://linkedin.com/in/pspyn) · [X](https://x.com/PSP_YN13) · [Reddit](https://www.reddit.com/user/PSP_YN/) · [Instagram](https://instagram.com/psp_yn13)
 
-**Personal:** [psppspyn13@gmail.com](mailto:psppspyn13@gmail.com)  
+**Personal:** [psppspyn13@gmail.com](mailto:psppspyn13@gmail.com)
 **VVCE:** [vvce25cse0402@vvce.ac.in](mailto:vvce25cse0402@vvce.ac.in)
 
 </div>
